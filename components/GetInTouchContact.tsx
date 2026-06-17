@@ -121,7 +121,7 @@ const GetInTouchContact = () => {
             {contactItems.map((item) => {
               const contentClassName =
                 item.id === "address"
-                  ? "text-md font-normal uppercase tracking-[-0.01em] text-[#777777]"
+                  ? "text-md font-normal tracking-[-0.01em] text-[#777777]"
                   : "text-md font-normal text-[#777777] transition-colors hover:text-[#B24002]";
 
               return (
