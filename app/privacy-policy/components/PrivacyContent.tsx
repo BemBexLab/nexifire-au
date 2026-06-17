@@ -39,7 +39,7 @@ const sections = [
 
 const introParagraphs: React.ReactNode[] = [
   "By using the NexiFire website and engaging with us as a client, lead, applicant, or visitor, you agree to the terms of this Privacy Policy.",
-  <>This policy describes how NexiFire ("NexiFire," "we," "us," or "our") collects and uses the personal information you provide through our website at <a className="text-[#B24002] font-semibold hover:text-blue-700" href="https://www.nexifire.com.au/" target="_blank" rel="noopener noreferrer">nexifire.com.au</a>, including when you interact with the brands in our ecosystem. It also explains the choices available to you regarding your information and how you can access or update it.</>,
+  <>This policy describes how NexiFire ("NexiFire," "we," "us," or "our") collects and uses the personal information you provide through our website at <a className="text-[#B24002] font-semibold hover:text-blue-700" href="/"  rel="noopener noreferrer">https://www.nexifire.com.au/</a>, including when you interact with the brands in our ecosystem. It also explains the choices available to you regarding your information and how you can access or update it.</>,
 ];
 
 const informationWeCollectItems = [
@@ -244,7 +244,7 @@ const PrivacyContent = () => {
               internet or electronic storage is completely secure, and we cannot
               guarantee absolute security. If you have any questions about the
               security of our website, please contact us at
-              {" "}<a href="mailto:contact@nexifire.com.au" className="text-[#B24002] font-semibold hover:text-blue-700" target="_blank" rel="noopener noreferrer">contact@nexifire.com.au</a>.
+              {" "}<a href="mailto:contact@nexifire.com.au" className="text-[#B24002] font-semibold hover:text-blue-700"  rel="noopener noreferrer">contact@nexifire.com.au</a>.
             </p>
           </SectionWrapper>
 
@@ -254,7 +254,7 @@ const PrivacyContent = () => {
           >
             <p>
               To review, correct, or update the personal information you've
-              provided to us, please contact us at <a href="mailto:contact@nexifire.com.au" className="text-[#B24002] font-semibold hover:text-blue-700" target="_blank" rel="noopener noreferrer">contact@nexifire.com.au</a>.
+              provided to us, please contact us at <a href="mailto:contact@nexifire.com.au" className="text-[#B24002] font-semibold hover:text-blue-700"  rel="noopener noreferrer">contact@nexifire.com.au</a>.
             </p>
           </SectionWrapper>
 
