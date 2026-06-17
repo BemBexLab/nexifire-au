@@ -9,6 +9,7 @@ const recipientEmail =
 const maxResumeSize = 5 * 1024 * 1024;
 
 let transporter: Transporter | null = null;
+let transportVerified = false;
 
 function getOptionalEnv(name: string) {
   return process.env[name]?.trim();
@@ -57,6 +58,24 @@ function getTransporter() {
   }
 
   return transporter;
+}
+
+async function ensureTransporterReady() {
+  const smtpTransporter = getTransporter();
+
+  if (!transportVerified) {
+    await smtpTransporter.verify();
+    transportVerified = true;
+  }
+
+  return smtpTransporter;
+}
+
+function wasRecipientAccepted(
+  accepted: string[] | undefined,
+  recipient: string,
+) {
+  return accepted?.some((value) => value.toLowerCase() === recipient.toLowerCase());
 }
 
 function getFormString(formData: FormData, name: string) {
@@ -167,13 +186,18 @@ export async function POST(request: Request) {
   `;
 
   try {
-    await getTransporter().sendMail({
+    const smtpTransporter = await ensureTransporterReady();
+    const info = await smtpTransporter.sendMail({
       from: `"NexiFire Careers" <${getRequiredEnv("SMTP_USER")}>`,
       to: recipientEmail,
       replyTo: email,
       subject: `New career application from ${fullName}`,
       text,
       html,
+      envelope: {
+        from: getRequiredEnv("SMTP_USER"),
+        to: [recipientEmail],
+      },
       attachments: resume
         ? [
             {
@@ -184,6 +208,18 @@ export async function POST(request: Request) {
           ]
         : [],
     });
+
+    if (!wasRecipientAccepted(info.accepted, recipientEmail)) {
+      console.error("Career email not accepted by SMTP server:", info);
+
+      return Response.json(
+        {
+          error:
+            "SMTP accepted the connection but did not accept the recipient inbox. Check CAREERS_EMAIL and mailbox settings.",
+        },
+        { status: 500 },
+      );
+    }
   } catch (error) {
     console.error("Career application email failed:", error);
 
