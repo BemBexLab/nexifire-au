@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 const recipientEmail =
   getOptionalEnv("CAREERS_EMAIL") ||
   getOptionalEnv("CONTACT_EMAIL") ||
-  "contact@nexifire.com";
+  "contact@nexifire.com.au";
 const maxResumeSize = 5 * 1024 * 1024;
 
 let transporter: Transporter | null = null;

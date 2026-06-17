@@ -2,7 +2,7 @@ import nodemailer, { type Transporter } from "nodemailer";
 
 export const runtime = "nodejs";
 
-const recipientEmail = getOptionalEnv("CONTACT_EMAIL") || "contact@nexifire.com";
+const recipientEmail = getOptionalEnv("CONTACT_EMAIL") || "contact@nexifire.com.au";
 
 type ContactRequest = {
   name?: unknown;
