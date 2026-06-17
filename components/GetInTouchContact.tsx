@@ -51,8 +51,8 @@ const contactItems = [
       </svg>
     ),
     iconAlt: "Email",
-    label: "contact@nexifire.com",
-    href: "mailto:contact@nexifire.com",
+    label: "contact@nexifire.com.au",
+    href: "mailto:contact@nexifire.com.au",
   },
   {
     id: "address",

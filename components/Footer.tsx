@@ -98,10 +98,10 @@ const FooterCTA = () => {
                 <li className="flex items-center">
                   <MdOutlineEmail className="shrink-0" />
                   <a
-                    href="mailto:contact@nexifire.com"
+                    href="mailto:contact@nexifire.com.au"
                     className="ml-2 break-words"
                   >
-                    contact@nexifire.com
+                    contact@nexifire.com.au
                   </a>
                 </li>
                 <li className="flex items-start">
