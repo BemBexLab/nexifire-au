@@ -9,7 +9,7 @@ import { useContactForm } from "@/components/useContactForm";
 
 const contactPoints = [
   {
-    href: "tel:+14704707520",
+    href: "tel:+61272283952",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -20,7 +20,7 @@ const contactPoints = [
         <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.49a1 1 0 011 1c0 1.25.19 2.46.57 3.58a1 1 0 01-.25 1.01l-2.19 2.2z" />
       </svg>
     ),
-    text: "(470) 470-7520",
+    text: "(02) 7228 3952",
   },
   {
     href: "mailto:contact@nexifire.com",
@@ -48,7 +48,7 @@ const contactPoints = [
         <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 10a3 3 0 110-6 3 3 0 010 6z" />
       </svg>
     ),
-    text: "2300 LAKEVIEW PKWY ALPHARETTA, GA 30009",
+    text: "16A Fox Cl, Kariong NSW 2250, Australia",
   },
 ];
 
@@ -177,7 +177,7 @@ export default function GetInTouchSection() {
               {contactPoints.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start justify-start gap-[14px] sm:justify-start sm:gap-[18px]"
+                  className="flex items-center justify-start gap-[14px] sm:justify-start sm:gap-[18px]"
                 >
                   <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-[6px] bg-[#B24002]">
                     {item.icon}

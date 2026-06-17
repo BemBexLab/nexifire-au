@@ -31,8 +31,8 @@ const contactItems = [
       </svg>
     ),
     iconAlt: "Phone",
-    label: "(470)470-7520",
-    href: "tel:+14704707520",
+    label: "(02) 7228 3952",
+    href: "tel:+61272283952",
   },
   {
     id: "email",
@@ -71,7 +71,7 @@ const contactItems = [
       </svg>
     ),
     iconAlt: "Location",
-    label: "2300 Lakeview Pkwy Alpharetta, GA 30009",
+    label: "16A Fox Cl, Kariong NSW 2250, Australia",
   },
 ] as const;
 

@@ -91,8 +91,8 @@ const FooterCTA = () => {
               <ul className="space-y-2 text-base text-[#777777]">
                 <li className="flex items-center">
                   <LuPhoneCall className="shrink-0" />
-                  <a href="tel:+14704707520" className="ml-2 break-words">
-                    (470) 470-7520
+                  <a href="tel:+61272283952" className="ml-2 break-words">
+                    (02) 7228 3952
                   </a>
                 </li>
                 <li className="flex items-center">
@@ -107,7 +107,7 @@ const FooterCTA = () => {
                 <li className="flex items-start">
                   <SlLocationPin className="mt-1 shrink-0" />
                   <a href="" className="ml-2 break-words">
-                    2300 LAKEVIEW PKWY ALPHARETTA, GA 30009
+                    16A Fox Cl, Kariong NSW 2250, Australia
                   </a>
                 </li>
               </ul>
