@@ -1,5 +1,6 @@
 import BuildSmarter from "@/components/BuildSmarter";
 import FAQs from "@/components/FAQs";
+import GetInTouchSection from "@/components/GetInTouch";
 import LazyLatestBlogs from "@/components/LazyLatestBlogs";
 import OurValues from "@/components/OurValues";
 import PageHero from "@/components/PageHero";
@@ -47,6 +48,7 @@ const page = () => {
       />
       <FAQs />
       <LazyLatestBlogs />
+      <GetInTouchSection />
     </section>
   );
 };

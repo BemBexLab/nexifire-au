@@ -14,7 +14,7 @@ type FlagIconComponent = React.ComponentType<
 const flagIcons = FlagIcons as unknown as Record<string, FlagIconComponent>;
 
 const CareerApplicationForm = () => {
-  const [selectedCountryCode, setSelectedCountryCode] = useState("US");
+  const [selectedCountryCode, setSelectedCountryCode] = useState("AU");
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const [resumeName, setResumeName] = useState("");
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">(
@@ -25,6 +25,7 @@ const CareerApplicationForm = () => {
   const countryDropdownRef = useRef<HTMLDivElement>(null);
   const selectedCountry =
     countryPhoneOptions.find((country) => country.code === selectedCountryCode) ??
+    countryPhoneOptions.find((country) => country.code === "AU") ??
     countryPhoneOptions[0];
   const SelectedFlag = flagIcons[selectedCountry.code];
 
@@ -69,7 +70,7 @@ const CareerApplicationForm = () => {
 
     if (response.ok) {
       event.currentTarget.reset();
-      setSelectedCountryCode("US");
+      setSelectedCountryCode("AU");
       setResumeName("");
       setSubmitStatus("success");
       setSubmitMessage("Thanks. Your application has been sent.");

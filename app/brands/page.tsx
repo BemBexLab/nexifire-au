@@ -1,4 +1,5 @@
 import BuildSmarter from "@/components/BuildSmarter";
+import GetInTouchSection from "@/components/GetInTouch";
 import OurBrands from "@/components/OurBrands";
 import PageHero from "@/components/PageHero";
 import React from "react";
@@ -22,6 +23,7 @@ const page = () => {
         backgroundImageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop"
         backgroundImageAlt="Team meeting"
       />
+      <GetInTouchSection />
     </section>
   );
 };

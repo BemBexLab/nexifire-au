@@ -5,6 +5,7 @@ import { serviceWhatWeDoCards } from "./data";
 import React from "react";
 import BuildSmarter from "@/components/BuildSmarter";
 import FAQs from "@/components/FAQs";
+import GetInTouchSection from "@/components/GetInTouch";
 
 const page = () => {
   return (
@@ -55,6 +56,7 @@ const page = () => {
         backgroundImageAlt="Team meeting"
       />
       <FAQs />
+      <GetInTouchSection />
     </section>
   );
 };
