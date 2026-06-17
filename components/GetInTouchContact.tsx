@@ -76,10 +76,10 @@ const contactItems = [
 ] as const;
 
 const GetInTouchContact = () => {
-  const [selectedCountryCode, setSelectedCountryCode] = useState("US");
+  const [selectedCountryCode, setSelectedCountryCode] = useState("AU");
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const { handleSubmit, isSubmitting, submitMessage, submitStatus } =
-    useContactForm("Contact page", () => setSelectedCountryCode("US"));
+    useContactForm("Contact page", () => setSelectedCountryCode("AU"));
   const countryDropdownRef = useRef<HTMLDivElement>(null);
   const selectedCountry =
     countryPhoneOptions.find(

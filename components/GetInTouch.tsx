@@ -53,10 +53,10 @@ const contactPoints = [
 ];
 
 export default function GetInTouchSection() {
-  const [selectedCountryCode, setSelectedCountryCode] = useState("US");
+  const [selectedCountryCode, setSelectedCountryCode] = useState("AU");
   const [isCountryMenuOpen, setIsCountryMenuOpen] = useState(false);
   const { handleSubmit, isSubmitting, submitMessage, submitStatus } =
-    useContactForm("Home page", () => setSelectedCountryCode("US"));
+    useContactForm("Home page", () => setSelectedCountryCode("AU"));
   const countryMenuRef = useRef<HTMLDivElement | null>(null);
   const flagComponents = FlagIcons as Record<
     string,
@@ -68,7 +68,7 @@ export default function GetInTouchSection() {
       countryPhoneOptions.find(
         (country) => country.code === selectedCountryCode
       ) ??
-      countryPhoneOptions.find((country) => country.code === "US") ??
+      countryPhoneOptions.find((country) => country.code === "AU") ??
       countryPhoneOptions[0],
     [selectedCountryCode]
   );
@@ -239,12 +239,12 @@ export default function GetInTouchSection() {
                           <SelectedFlagIcon className="h-[16px] w-[22px] rounded-[2px]" />
                         ) : (
                           <span className="text-[13px] font-medium">
-                            {selectedCountry?.code ?? "US"}
+                            {selectedCountry?.code ?? "AU"}
                           </span>
                         )}
                       </span>
                       <span className="whitespace-nowrap text-[13px] leading-none text-[#6f6f6f]">
-                        {selectedCountry?.dialCode ?? "+1"}
+                        {selectedCountry?.dialCode ?? "+61"}
                       </span>
                       <svg
                         viewBox="0 0 20 20"
@@ -290,7 +290,7 @@ export default function GetInTouchSection() {
                   <input
                     type="hidden"
                     name="countryCode"
-                    value={selectedCountry?.dialCode ?? "+1"}
+                    value={selectedCountry?.dialCode ?? "+61"}
                   />
                   <input
                     name="phone"
