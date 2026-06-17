@@ -261,10 +261,10 @@ const TermsContent = () => {
                   <FaPhoneAlt color="#FFFFFF" size={18} />
                 </div>
                 <a
-                  href="tel:+61272283952"
+                  href="tel:+61468285539"
                   className="text-base text-gray-500 hover:underline sm:text-lg"
                 >
-                  (02) 7228 3952
+                  0468 285 539
                 </a>
               </div>
 
