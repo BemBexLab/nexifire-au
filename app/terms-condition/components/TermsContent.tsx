@@ -144,10 +144,10 @@ const TermsContent = () => {
                   <FaPhoneAlt color="#FFFFFF" size={18} />
                 </div>
                 <a
-                  href="tel:+14703751520"
+                  href="tel:+61272283952"
                   className="text-base text-gray-500 hover:underline sm:text-lg"
                 >
-                  (470) 375 - 1520
+                  (02) 7228 3952
                 </a>
               </div>
 
@@ -156,10 +156,10 @@ const TermsContent = () => {
                   <MdEmail color="#FFFFFF" size={18} />
                 </div>
                 <a
-                  href="mailto:contact@nexifire.com"
+                  href="mailto:contact@nexifire.com.au"
                   className="break-all text-base text-gray-500 hover:underline sm:text-lg"
                 >
-                  contact@nexifire.com
+                  contact@nexifire.com.au
                 </a>
               </div>
 
@@ -168,7 +168,7 @@ const TermsContent = () => {
                   <FaLocationDot color="#FFFFFF" size={18} />
                 </div>
                 <span className="text-base text-gray-500 uppercase sm:text-lg">
-                  2500 Lakeview Pkwy, Alpharetta, GA 30009
+                  16A Fox Cl, Kariong NSW 2250, Australia
                 </span>
               </div>
             </div>
