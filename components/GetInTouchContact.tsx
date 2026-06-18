@@ -31,7 +31,7 @@ const contactItems = [
       </svg>
     ),
     iconAlt: "Phone",
-    label: "0468 285 539",
+    label: "(0468) 285-539",
     href: "tel:+61468285539",
   },
   {

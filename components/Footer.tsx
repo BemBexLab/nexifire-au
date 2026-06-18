@@ -92,7 +92,7 @@ const FooterCTA = () => {
                 <li className="flex items-center">
                   <LuPhoneCall className="shrink-0" />
                   <a href="tel:+61468285539" className="ml-2 break-words">
-                    0468 285 539
+                    (0468) 285-539
                   </a>
                 </li>
                 <li className="flex items-center">
