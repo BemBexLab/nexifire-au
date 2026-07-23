@@ -31,63 +31,23 @@ const LOGO_HEIGHT = 90;
 
 const brands: BrandItem[] = [
   {
-    name: "Ink Founders",
+    name: "Ink Founders AU",
     description:
-      "Ink Founders is where high-level ideas become professional manuscripts. Specialize in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
-    url: "https://www.inkfounders.com/",
+      "Ink Founders AU is where high-level ideas become professional manuscripts. Specialize in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
+    url: "https://www.inkfounders.com.au/",
     image: {
       src: "/icons/inkfounder logo-19 1.png",
-      alt: "Inkfounders Logo",
+      alt: "Inkfounders AU Logo",
     },
   },
   {
-    name: "Story Loom Publishing",
+    name: "Aussie Digital Studios AU",
     description:
-      "Story Loom is a leading self-publishing partner with a portfolio of over 1,500 successful projects. We provide aspiring and established authors with the tools to navigate the complexities of the modern market, offering expert writing, editing, author website, custom cover design, and seamless publishing on major global platforms like Amazon, Barnes & Noble, and IngramSpark.",
-    url: "https://storyloompublishing.com/",
+      "Aussie Digital Studios AU is Built for Australian businesses tired of investing in websites that look good but fail to deliver results.We combine web design, development, SEO, digital marketing, and branding into one cohesive strategy, aligned with your business goals from day one.",
+    url: "https://www.aussiedigitalstudios.com.au/",
     image: {
-      src: "/icons/Group 1.png",
-      alt: "Story Loom Publishing Logo",
-    },
-  },
-  {
-    name: "Web Geeks Global",
-    description:
-      "Web Geeks Global specializes in the science of ‘Attention-to-Revenue’ and provides an omnichannel marketing approach across Google, Meta, LinkedIn, YouTube, and TikTok to confirm that your brand resonates where your customers live. From precision-targeted ad campaigns, website development, digital marketing, to high-impact content creation, build automated systems designed to capture attention and convert it into high-value ROI.",
-    url: "#",
-    image: {
-      src: "/icons/Group.png",
-      alt: "Web Geeks Logo",
-    },
-  },
-  {
-    name: "Ink2Audiobook",
-    description:
-      "In an era of auditory consumption, Ink2Audiobook converts static text into high-fidelity listening experiences. Ink2Audiobook gives audiobook production services, including narration, editing, marketing, and publishing services. We merge world-class vocal talent with cinematic sound design and background scoring. Our technical engineers make sure that every file is mastered to elite industry standards, allowing your story to captivate audiences on Audible, Spotify, and beyond.",
-    url: "https://ink2audiobook.com/",
-    image: {
-      src: "/icons/Group (1).png",
-      alt: "Ink2Audiobook Logo",
-    },
-  },
-  {
-    name: "The Quill Book",
-    description:
-      "Mirroring our highest standards of literary creation, The Quill Book offers complete services from writing, editorial services, and cover design to marketing, publishing, and global distribution. Your story is not only told but polished for maximum market impact and reader engagement.",
-    url: "https://thequillbook.com/",
-    image: {
-      src: "/icons/PNG file-01 1.png",
-      alt: "The Quill Book Logo",
-    },
-  },
-  {
-    name: "Web Founders USA",
-    description:
-      "Web Founders USA engineers high-speed, conversion-centric digital platforms. That doesn't just build websites, but creates responsive, performance-first environments optimized for elite Google rankings and seamless lead generation. By integrating technical SEO with lightning-fast architecture, and make sure your brand maintains a dominant presence across every device and search engine.",
-    url: "https://www.webfoundersusa.com/",
-    image: {
-      src: "/icons/Frame 156.png",
-      alt: "WebFounders USA logo",
+      src: "/images/image.png",
+      alt: "Aussie Digital Studios AU Logo",
     },
   },
 ];
@@ -125,6 +85,7 @@ const OurBrands = () => {
             <motion.a
               key={brand.name}
               href={brand.url}
+              target="__blank"
               className="group relative block rounded-[18px] border border-[#e8e8e8] bg-[#f5f5f5] px-5 pb-20 pt-5 shadow-[0_4px_18px_rgba(0,0,0,0.04)] transition [contain-intrinsic-size:0_360px] [content-visibility:auto] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
