@@ -1,45 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { LazyMotion, domAnimation, m } from "motion/react";
 import { SlArrowRight } from "react-icons/sl";
-
-type BlogCard = {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-};
-
-const blogs: BlogCard[] = [
-  {
-    id: 1,
-    title: "The Nexifire Ecosystem: One Brand, Six Pillars, Infinite Growth",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: 2,
-    title: "How to Build a Scalable Content to Growth System",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: 3,
-    title: "How to Self-Publish a Book in 2026",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-  },
-];
+import { getRecentBlogPosts } from "@/data/blogs";
 
 const LatestBlogs = () => {
+  const blogs = getRecentBlogPosts(3);
+
   return (
     <LazyMotion features={domAnimation}>
       <section className="flex w-full items-center justify-center bg-white pb-12 sm:pb-16 lg:pb-20">
@@ -89,13 +59,13 @@ const LatestBlogs = () => {
                     {blog.description}
                   </p>
 
-                  <a
-                    href="#"
+                  <Link
+                    href={`/blogs/${blog.slug}`}
                     className="mt-4 inline-flex items-center gap-2 border-b border-[#f26a21] pb-[1px] text-[14px] font-normal leading-loose text-[#B24002]"
                   >
                     Learn More
                     <span className="text-[16px] leading-none"><SlArrowRight size={13} /></span>
-                  </a>
+                  </Link>
                 </div>
               </m.article>
             ))}
