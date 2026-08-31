@@ -1,6 +1,7 @@
 "use client";
 
 import { blogPosts } from "@/data/blogs";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { SlArrowRight } from "react-icons/sl";
 
@@ -40,14 +41,14 @@ export default function BlogsGrid() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ y: -6 }}
           >
-            <div className="">
-              <img
-                src={post.image}
-                alt={post.title}
-                loading="lazy"
-                decoding="async"
-                className="h-[245px] w-full rounded-[12px] object-cover"
-              />
+            <div className="relative h-[245px] w-full">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 416px"
+                  className="rounded-[12px] object-cover"
+                />
             </div>
 
             <div className="flex flex-1 flex-col px-4 pb-5 pt-3">

@@ -1,5 +1,13 @@
 import PageHero from "@/components/PageHero";
+import { createPageMetadata } from "@/lib/metadata";
 import LazyPrivacyContent from "./components/LazyPrivacyContent";
+
+export const metadata = createPageMetadata({
+  title: "Privacy Policy: NexiFire Data Protection",
+  description:
+    "Read NexiFire's privacy policy to learn how we collect, use, and protect your personal information when you visit our website or contact us.",
+  pathname: "/privacy-policy",
+});
 
 const page = () => {
   return (

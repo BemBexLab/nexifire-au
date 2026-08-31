@@ -71,10 +71,24 @@ const SiteLoadingScreen = () => {
   };
 
   const completeLoading = () => {
+    clearTimers();
+    pendingNavigation.current = false;
     setVisible(false);
     document.documentElement.dataset.nexifireLoaderComplete = "true";
     window.dispatchEvent(new Event(LOADER_COMPLETE_EVENT));
   };
+
+  useEffect(() => {
+    const previousOverflow = document.body.style.overflow;
+
+    if (visible) {
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [visible]);
 
   useEffect(() => {
     const hasSeenLoader = window.sessionStorage.getItem(FIRST_VISIT_KEY);
@@ -143,6 +157,10 @@ const SiteLoadingScreen = () => {
     if (pendingNavigation.current) {
       pendingNavigation.current = false;
       if (visible) {
+        if (maxTimer.current !== null) {
+          window.clearTimeout(maxTimer.current);
+          maxTimer.current = null;
+        }
         hideTimer.current = window.setTimeout(completeLoading, 420);
       } else {
         completeLoading();

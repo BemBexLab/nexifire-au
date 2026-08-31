@@ -7,6 +7,7 @@ type RichTextLetterRevealProps = {
   text: string;
   baseDelay?: number;
   enabled?: boolean;
+  preserveWords?: boolean;
   stepDelay?: number;
 };
 
@@ -14,6 +15,7 @@ export default function RichTextLetterReveal({
   text,
   baseDelay = 0.2,
   enabled = true,
+  preserveWords = false,
   stepDelay = 0.018,
 }: RichTextLetterRevealProps) {
   const [mounted, setMounted] = useState(false);
@@ -39,6 +41,43 @@ export default function RichTextLetterReveal({
     const renderNode = (node: ChildNode, path: string): ReactNode => {
       if (node.nodeType === Node.TEXT_NODE) {
         const value = node.textContent ?? "";
+
+        if (preserveWords) {
+          return value.split(/(\s+)/).map((segment, i) => {
+            if (/^\s+$/.test(segment)) {
+              return (
+                <span key={`${path}-space-${i}`}>
+                  {segment.replaceAll(" ", "\u00A0")}
+                </span>
+              );
+            }
+
+            return (
+              <span
+                key={`${path}-word-${i}`}
+                className="inline-block whitespace-nowrap"
+              >
+                {segment.split("").map((char, charIndexInWord) => {
+                  const key = `${path}-word-${i}-char-${charIndexInWord}`;
+                  const delay = baseDelay + charIndex * stepDelay;
+                  charIndex += 1;
+                  return (
+                    <motion.span
+                      key={key}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.16, ease: "easeOut", delay }}
+                      className="inline-block"
+                    >
+                      {char}
+                    </motion.span>
+                  );
+                })}
+              </span>
+            );
+          });
+        }
+
         return value.split("").map((char, i) => {
           const key = `${path}-char-${i}`;
           const delay = baseDelay + charIndex * stepDelay;
@@ -84,7 +123,7 @@ export default function RichTextLetterReveal({
     return Array.from(root.childNodes).map((node, i) =>
       renderNode(node, `root-${i}`),
     );
-  }, [baseDelay, enabled, mounted, normalizedText, stepDelay]);
+  }, [baseDelay, enabled, mounted, normalizedText, preserveWords, stepDelay]);
 
   if (!enabled) {
     return <span className="whitespace-pre-line opacity-0">{normalizedText}</span>;

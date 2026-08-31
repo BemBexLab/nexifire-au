@@ -61,23 +61,23 @@ export default function NavBar() {
         isHidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex w-full items-center justify-between gap-4 px-4 py-3 md:px-6 xl:px-10">
-        <div className="flex shrink-0 items-center gap-2.5 justify-self-start">
-          <Link href="/" className="flex items-center gap-2.5">
-          <Image
-            src="/images/Group 427320850.png"
-            alt="NexiFire Logo"
-            width={240}
-            height={64}
-            sizes="auto"
-            className="h-auto w-[130px] shrink-0 sm:w-[190px] xl:w-[200px] xl:h-[70px]"
-            priority
-          />
+      <div className="flex min-h-[56px] w-full items-center justify-between gap-4 px-4 py-2 sm:min-h-[64px] sm:px-6 sm:py-3 xl:gap-6 xl:px-10">
+        <div className="flex shrink-0 items-center justify-self-start">
+          <Link href="/" className="flex shrink-0 items-center">
+            <Image
+              src="/images/Group 427320850.png"
+              alt="NexiFire Logo"
+              width={240}
+              height={64}
+              sizes="(max-width: 639px) 130px, (max-width: 1279px) 190px, 200px"
+              className="block h-auto w-[130px] shrink-0 object-contain sm:w-[190px] xl:w-[200px]"
+              priority
+            />
           </Link>
         </div>
 
         {/* ── Desktop Nav Links ─────────────────────────────────────── */}
-        <ul className="hidden flex-1 items-center justify-center gap-13 font-jakarta text-lg lg:flex">
+        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-8 font-jakarta text-lg xl:flex 2xl:gap-13">
           {navLinks.map((link) => {
             const isActive = isActiveLink(link.href);
             const className = `whitespace-nowrap text-md transition-colors duration-150 ${
@@ -103,7 +103,7 @@ export default function NavBar() {
         </ul>
 
         {/* ── CTA Button ───────────────────────────────────────────── */}
-        <div className="hidden min-h-[48px] items-center justify-end font-jakarta lg:flex">
+        <div className="hidden shrink-0 items-center justify-end font-jakarta xl:flex">
           <Link
             href="/contact"
             className="flex items-center justify-center gap-2 rounded-lg border border-[#c0784a]/70 bg-white/24 px-5 py-[9px] text-md font-medium text-[#c0784a] shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-xl transition-all duration-200 hover:bg-[#c0784a] hover:text-white hover:shadow-[0_10px_24px_rgba(178,64,2,0.24)]"
@@ -115,9 +115,10 @@ export default function NavBar() {
 
         {/* ── Mobile Hamburger ─────────────────────────────────────── */}
         <button
-          className="flex flex-col gap-[5px] rounded-lg border border-white/45 bg-white/25 p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-xl lg:hidden"
+          className="flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[5px] rounded-lg border border-white/45 bg-white/25 p-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] backdrop-blur-xl xl:hidden"
           onClick={() => setMobileOpen((p) => !p)}
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
         >
           <span
             className={`block w-5 h-[1.5px] bg-[#555] transition-all duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`}
@@ -133,7 +134,7 @@ export default function NavBar() {
 
       {/* ── Mobile Dropdown ───────────────────────────────────────── */}
       {mobileOpen && (
-        <div className="mx-3 mt-2 flex flex-col gap-3 rounded-lg border border-white/55 bg-white/72 px-6 py-4 font-jakarta shadow-[0_18px_45px_rgba(31,31,31,0.13),inset_0_1px_0_rgba(255,255,255,0.75)] backdrop-blur-2xl backdrop-saturate-150 sm:mx-4 md:mx-6 lg:hidden">
+        <div className="mx-3 mt-2 flex flex-col gap-3 rounded-lg border border-white/55 bg-white/72 px-6 py-4 font-jakarta shadow-[0_18px_45px_rgba(31,31,31,0.13),inset_0_1px_0_rgba(255,255,255,0.75)] backdrop-blur-2xl backdrop-saturate-150 sm:mx-4 md:mx-6 xl:hidden">
           {navLinks.map((link) => {
             const isActive = isActiveLink(link.href);
             const className = `text-sm py-1 transition-colors duration-150 ${

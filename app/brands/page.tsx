@@ -2,7 +2,15 @@ import BuildSmarter from "@/components/BuildSmarter";
 import GetInTouchSection from "@/components/GetInTouch";
 import OurBrands from "@/components/OurBrands";
 import PageHero from "@/components/PageHero";
+import { createPageMetadata } from "@/lib/metadata";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "Our Brands: The NexiFire Portfolio of Growth",
+  description:
+    "Explore NexiFire's family of brands, including Ink Founders, Story Loom, Web Geeks Global, Ink2Audiobook, and Web Founders USA.",
+  pathname: "/brands",
+});
 
 const page = () => {
   return (
@@ -10,7 +18,7 @@ const page = () => {
       <PageHero
         eyebrow="Our Brands"
         title={`BRANDS BUILT WITH PURPOSE`}
-        description={`A strategic network of specialized entities, each meticulously engineered to solve complex growth\nchallenges and provide high level infrastructure in the global market.`}
+        description={`A strategic network of specialized entities, each meticulously engineered to solve complex growth challenges and provide high level infrastructure in the global market.`}
       />
       <OurBrands />
       <BuildSmarter

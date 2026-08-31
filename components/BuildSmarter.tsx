@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 
@@ -11,7 +12,7 @@ type BuildSmarterStat = {
   label: string;
 };
 
-type BuildSmarterProps = {
+export type BuildSmarterProps = {
   title: string;
   description: string;
   primaryButtonText: string;
@@ -57,10 +58,10 @@ function CountUpStat({
   }, [start, value]);
 
   return (
-    <h3 className="text-3xl font-semibold leading-none text-[#2d2d2d] sm:text-[42px] md:text-[48px]">
+    <span className="block text-3xl font-semibold leading-none text-[#2d2d2d] sm:text-[42px] md:text-[48px]">
       {count}
       {suffix}
-    </h3>
+    </span>
   );
 }
 
@@ -86,9 +87,11 @@ const BuildSmarter = ({
         {/* HERO CARD */}
         <div className="relative min-h-[560px] w-full overflow-hidden rounded-[8px] sm:min-h-[520px] md:min-h-[600px] lg:min-h-[630px]">
           {/* Background Image */}
-          <img
+          <Image
             src={backgroundImageSrc}
             alt={backgroundImageAlt}
+            fill
+            sizes="(max-width: 768px) 100vw, 1600px"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -97,12 +100,12 @@ const BuildSmarter = ({
 
           {/* Left Content */}
           <div className="relative z-10 flex min-h-[560px] items-end py-8 sm:min-h-[520px] sm:py-10 md:min-h-[600px] md:items-center md:py-16 lg:min-h-[630px]">
-            <div className="w-fit max-w-full px-5 pt-16 font-jakarta sm:px-8 md:px-12 md:pt-24 lg:pt-[120px]">
-              <h1 className="whitespace-pre-line text-[36px] font-normal uppercase leading-[1.08] text-white sm:text-[44px] md:text-[56px] md:leading-[1.05] lg:text-[60px]">
+            <div className="w-full max-w-full px-5 pt-16 font-jakarta sm:px-8 md:px-12 md:pt-24 lg:pt-[120px]">
+              <h2 className="w-full font-normal uppercase text-white md:max-w-[50%]">
                 {title}
-              </h1>
+              </h2>
 
-              <p className="mt-5 w-fit max-w-full whitespace-pre-line text-sm font-light leading-7 text-white/80 sm:text-base md:mt-6 md:text-[20px] md:leading-8">
+              <p className="mt-5 w-fit md:max-w-1/2 sm:max-w-full whitespace-pre-line text-sm font-light leading-7 text-white/80 sm:text-base md:mt-6 md:text-[20px] md:leading-8">
                 {description}
               </p>
 

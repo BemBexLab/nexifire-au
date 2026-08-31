@@ -1,20 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FooterCTA from "@/components/Footer";
-import SiteLoadingScreen from "@/components/SiteLoadingScreen";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { siteUrl } from "@/lib/metadata";
 
 const mulish = localFont({
   src: "../public/fonts/Mulish,Plus_Jakarta_Sans/Mulish/Mulish-VariableFont_wght.ttf",
@@ -32,11 +21,23 @@ const nunito = localFont({
   src: "../public/fonts/Nunito/Nunito-VariableFont_wght.ttf",
   variable: "--font-nunito",
   display: "swap",
+  preload: false,
 });
 
+// All routes rendered through this layout must be generated at build time.
+// A production build will fail if a page accidentally introduces request-time
+// data, preventing an unnoticed fallback to server-side rendering.
+export const dynamic = "error";
+export const revalidate = false;
+
 export const metadata: Metadata = {
-  title: "NexiFire",
-  description: "Create, Build, Grow.",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
+  title: "NexiFire: Create, Build, Grow",
+  description:
+    "NexiFire is a global growth ecosystem connecting specialized expertise across publishing, technology, content, marketing, and digital strategy.",
 };
 
 export default function RootLayout({
@@ -48,13 +49,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} ${mulish.variable} ${jakartaSans.variable} ${nunito.variable} h-full antialiased`}
+      className={`${mulish.variable} ${jakartaSans.variable} ${nunito.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <div className="relative z-[100]">
           <NavBar />
         </div>
-        <SiteLoadingScreen />
         {children}
         <FooterCTA />
       </body>

@@ -9,6 +9,14 @@ import NotAnAgency from "@/components/NotAnAgency";
 import TestimonialsSection from "@/components/Testimonials";
 import WhatWeDo from "@/components/WhatWeDo";
 import { whatWeDoCards } from "@/data/whatWeDoCards";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "NexiFire: Growth Ecosystem for Brands That Scale",
+  description:
+    "NexiFire is a growth ecosystem of specialized brands delivering strategy, marketing, content, and digital systems that help businesses scale.",
+  pathname: "/",
+});
 
 export default function Home() {
   return (
@@ -33,9 +41,8 @@ areas.`}
       />
       <NotAnAgency />
       <BuildSmarter
-        title={`BUILD SMARTER.
-GROW FASTER.`}
-        description={`Whether you're building a brand or scaling one, NexiFire\ngives you the structure, strategy, and execution to\nmove forward with clarity.`}
+        title={`BUILD SMARTER. GROW FASTER.`}
+        description={`Whether you're building a brand or scaling one, NexiFire gives you the structure, strategy, and execution to move forward with clarity.`}
         primaryButtonText="Let's Talk"
         primaryButtonHref="/contact"
         secondaryButtonText="See Our Work"

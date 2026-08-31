@@ -1,7 +1,15 @@
 import BlogsGrid from "@/components/BlogsGrid";
-import GetInTouchSection from "@/components/GetInTouch";
+import LazyGetInTouch from "@/components/LazyGetInTouch";
 import PageHero from "@/components/PageHero";
+import { createPageMetadata } from "@/lib/metadata";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "Blog: Insights on Growth From NexiFire",
+  description:
+    "Read NexiFire's latest articles on publishing, content strategy, and digital growth systems designed to help brands scale with clarity.",
+  pathname: "/blogs",
+});
 
 const page = () => {
   return (
@@ -9,10 +17,10 @@ const page = () => {
       <PageHero
         eyebrow="Blog"
         title={`Our Latest Blogs`}
-        description={`Stay updated with practical ideas and system driven strategies across publishing, digital growth, and\ntechnology. Our team is built to help you scale with clarity.`}
+        description={`Stay updated with practical ideas and system driven strategies across publishing, digital growth, and technology. Our team is built to help you scale with clarity.`}
       />
       <BlogsGrid />
-      <GetInTouchSection />
+      <LazyGetInTouch />
     </section>
   );
 };

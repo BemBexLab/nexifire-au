@@ -83,16 +83,19 @@ const TriangleParticle = ({
 const HomeHero = () => {
   const [animatedCount, setAnimatedCount] = useState(0);
   const [cardTiltDone, setCardTiltDone] = useState(false);
-  const [loaderComplete, setLoaderComplete] = useState(false);
   const [isDesktopLayout, setIsDesktopLayout] = useState(false);
   const heroRef = useRef<HTMLElement | null>(null);
-  const isHeroInView = useInView(heroRef, { amount: 0.25, once: true });
-  const shouldAnimate = loaderComplete && isHeroInView;
+  const isHeroInView = useInView(heroRef, {
+    amount: 0.25,
+    once: true,
+    initial: true,
+  });
+  const shouldAnimate = isHeroInView;
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   const heroDescription =
     "NexiFire is a collective of specialized brands delivering strategy, \nmarketing, content, and digital systems designed to grow businesses with clarity and precision.";
-  const businessHeading = "Built For Businesses \nThat Are Serious AboutGrowth";
+  const businessHeading = "Built For Businesses That Are Serious About Growth";
   const giftRibbonShapes = [
     { x: -40, y: -32, rotate: -62, scale: 1.05, delay: 0.05 },
     { x: 62, y: -42, rotate: -20, scale: 0.72, delay: 0.12 },
@@ -105,21 +108,6 @@ const HomeHero = () => {
     { x: -36, y: 178, rotate: -48, scale: 0.76, delay: 0.56 },
     { x: -48, y: 72, rotate: -30, scale: 0.66, delay: 0.62 },
   ];
-
-  useEffect(() => {
-    const handleLoaderComplete = () => setLoaderComplete(true);
-
-    if (document.documentElement.dataset.nexifireLoaderComplete === "true") {
-      setLoaderComplete(true);
-    }
-
-    window.addEventListener("nexifire:loader-complete", handleLoaderComplete);
-    return () =>
-      window.removeEventListener(
-        "nexifire:loader-complete",
-        handleLoaderComplete,
-      );
-  }, []);
 
   useEffect(() => {
     const desktopQuery = window.matchMedia("(min-width: 1280px)");
@@ -433,7 +421,7 @@ const HomeHero = () => {
                   onAnimationComplete={() => setCardTiltDone(true)}
                   style={{ transformOrigin: "left bottom" }}
                 >
-                  <p className="text-center tabular-nums text-[56px] leading-none text-black sm:text-[64px] md:text-8xl xl:text-[72px] 2xl:text-8xl 2xl:pb-3">
+                  <p className="text-center tabular-nums text-[56px]! leading-none! text-black sm:text-[64px]! md:text-8xl! xl:text-[72px]! 2xl:pb-3 2xl:text-8xl!">
                     {animatedCount}+
                   </p>
                   <p className="w-full text-[#5C5D5F] xl:text-[15px] 2xl:text-base">
@@ -462,12 +450,16 @@ const HomeHero = () => {
               {/* Right div */}
               <div
                 className="relative h-[270px] w-full overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat sm:h-[320px] md:h-[350px] xl:w-[286px] 2xl:w-[370px]"
-                style={{
-                  backgroundImage: "url('/images/Rectangle 23805.png')",
-                }}
                 role="img"
                 aria-label="Second Col Corporate image"
               >
+                <Image
+                  src="/images/Rectangle 23805.png"
+                  alt="Corporate growth team"
+                  fill
+                  sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 370px"
+                  className="object-cover"
+                />
                 {/* Overlapping SVG */}
                 <div className="absolute left-6 top-6 z-10 flex h-[64px] w-[64px] items-center justify-center rounded-full bg-black md:left-10 md:top-15 md:h-[80px] md:w-[80px]">
                   <motion.svg
@@ -578,15 +570,16 @@ const HomeHero = () => {
                     </motion.div>
 
                     {/* Flex Text */}
-                    <p className="text-xs text-white md:text-sm">
+                    <p className="shrink-0 whitespace-nowrap text-xs! leading-tight! text-white md:text-sm!">
                       Strategy. Execution. Scale.
                     </p>
                   </div>
 
-                  <p className="w-full max-w-[240px] text-[20px] font-medium leading-tight text-white md:max-w-[290px] md:text-[26px] xl:max-w-[320px] 2xl:absolute 2xl:mt-8">
+                  <p className="w-full max-w-full text-[20px]! font-medium leading-tight! text-white sm:max-w-[290px] md:text-[26px]! xl:max-w-[320px]">
                     <RichTextLetterReveal
                       text={businessHeading}
                       enabled={shouldAnimate}
+                      preserveWords
                     />
                   </p>
                 </div>

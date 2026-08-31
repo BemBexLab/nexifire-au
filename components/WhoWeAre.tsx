@@ -61,10 +61,10 @@ const WhoWeAre = ({
   return (
     <section
       ref={sectionRef}
-      className="my-16 flex flex-col items-center justify-center gap-10 px-4 sm:my-20 sm:px-6 md:gap-12 lg:my-30 lg:flex-row lg:items-stretch lg:px-8 xl:px-0"
+      className="mx-auto my-16 grid w-full max-w-[1600px] min-w-0 grid-cols-1 items-center gap-10 px-4 sm:my-20 sm:px-6 md:gap-12 lg:my-30 lg:grid-cols-[minmax(0,1.1fr)_minmax(360px,0.9fr)] lg:items-stretch lg:gap-8 lg:px-8 xl:grid-cols-[minmax(0,1.05fr)_minmax(460px,0.95fr)] xl:gap-10 xl:px-10 2xl:gap-14 2xl:px-10"
     >
-      <div className="flex w-full max-w-3xl flex-col">
-        <h2 className="[word-spacing:0.5rem] w-4xl font-jakarta inline-block bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-center text-4xl font-regular uppercase text-transparent sm:text-5xl md:text-6xl lg:text-left">
+      <div className="flex w-full min-w-0 max-w-3xl flex-col">
+        <h2 className="[word-spacing:0.5rem] inline-block w-full max-w-full break-words bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-center font-jakarta text-4xl font-regular uppercase leading-[1.1] text-transparent sm:text-4xl md:text-5xl lg:text-left lg:text-5xl 2xl:text-6xl">
           {heading}
         </h2>
 
@@ -111,13 +111,13 @@ const WhoWeAre = ({
         </div>
       </div>
 
-      <div className="relative aspect-[660/732] w-full max-w-[420px] overflow-hidden bg-[#eeeeee] sm:max-w-[520px] md:max-w-[600px] lg:ml-10 lg:aspect-auto lg:max-w-[520px] lg:self-stretch xl:ml-20 xl:max-w-[660px] rounded-3xl">
+      <div className="relative aspect-[660/732] w-full max-w-[420px] justify-self-center overflow-hidden rounded-3xl bg-[#eeeeee] sm:max-w-[520px] md:max-w-[600px] lg:aspect-auto lg:max-w-[660px] lg:min-w-0 lg:justify-self-end lg:self-stretch">
         {shouldLoadImage && (
           <Image
             src={image.src}
             alt={image.alt}
             fill
-            sizes="(max-width: 640px) 420px, (max-width: 768px) 520px, (max-width: 1024px) 600px, (max-width: 1280px) 520px, 660px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1535px) 50vw, 660px"
             loading={image.loading ?? "lazy"}
             priority={image.priority}
             className="object-cover"

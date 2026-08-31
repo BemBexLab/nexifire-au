@@ -1,28 +1,76 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: light;
   --background: #ffffff;
   --foreground: #171717;
+  --heading-line-height: 1.2;
+  --heading-letter-spacing: -0.015em;
+  --heading-word-spacing: 0.08em;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-mulish);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-mulish), Arial, Helvetica, sans-serif;
+}
+
+/* Windows uses a reserved scrollbar gutter at these compact desktop widths.
+   Keep the page scrollable without leaving a contrasting strip beside the
+   fixed navbar. */
+@media (min-width: 1280px) and (max-width: 1328px) {
+  html {
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Project-wide heading scale. Kept outside Tailwind layers so component
+   utilities cannot accidentally create inconsistent heading typography. */
+:where(h1, h2, h3, h4, h5, h6) {
+  line-height: var(--heading-line-height);
+  letter-spacing: var(--heading-letter-spacing);
+  word-spacing: var(--heading-word-spacing);
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, calc(3vw + 1rem), 4.25rem);
+}
+
+h2 {
+  font-size: clamp(2rem, calc(2vw + 1rem), 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, calc(0.5vw + 1rem), 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, calc(0.25vw + 1rem), 1.25rem);
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
 }
 
 .font-mulish {

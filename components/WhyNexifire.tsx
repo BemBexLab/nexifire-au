@@ -362,35 +362,37 @@ const WhyNexifire = () => {
 
   return (
     <section ref={sectionRef} className="w-full pb-14 md:pb-16 lg:pb-20">
-      <div className="mx-auto max-w-[1680px] text-center px-4 sm:px-6 lg:px-8">
-        <h2 className="font-jakarta uppercase bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-transparent inline-block font-regular text-6xl">
+      <div className="mx-auto w-full max-w-[1680px] px-4 text-center sm:px-6 lg:px-8">
+        <h2 className="inline-block max-w-full break-words bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text font-jakarta text-3xl font-normal uppercase leading-tight text-transparent sm:text-4xl md:text-5xl xl:text-6xl">
           Why NexiFire
         </h2>
 
         {shouldLoadCards ? (
-          <div className="mt-10 grid grid-cols-1 overflow-hidden sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
+          <div className="mt-8 grid grid-cols-1 overflow-hidden sm:mt-10 sm:grid-cols-2 lg:mt-12 xl:grid-cols-4">
             {features.map((item, index) => (
               <div
                 key={item.id}
-                className={`flex flex-col items-center px-10 py-4 text-center md:px-12 lg:px-16 ${
-                  index !== features.length - 1
-                    ? "lg:border-r lg:border-[#e6e6e6]"
+                className={`flex min-w-0 flex-col items-center px-4 py-7 text-center sm:px-6 sm:py-8 md:px-8 xl:px-6 xl:py-5 2xl:px-12 ${
+                  index < features.length - 1
+                    ? "border-b border-[#e6e6e6]"
                     : ""
+                } ${index >= 2 ? "sm:border-b-0" : ""} ${
+                  index % 2 === 0 ? "sm:border-r sm:border-[#e6e6e6]" : ""
                 } ${
-                  index < 2
-                    ? "sm:border-r sm:border-[#e6e6e6] lg:border-r"
-                    : ""
-                } ${
-                  index < 2 ? "sm:pb-8 lg:pb-4" : ""
-                } ${index >= 2 ? "sm:pt-8 lg:pt-4" : ""}`}
+                  index < features.length - 1
+                    ? "xl:border-b-0 xl:border-r xl:border-[#e6e6e6]"
+                    : "xl:border-r-0"
+                }`}
               >
-                <div className="mb-4 text-[#f26a21]">{item.icon}</div>
+                <div className="mb-4 flex h-10 items-center justify-center text-[#f26a21]">
+                  {item.icon}
+                </div>
 
-                <h3 className="font-jakarta max-w-[320px] text-lg font-medium leading-[1.25] text-[#282828]">
+                <h3 className="max-w-[320px] break-words font-jakarta text-base font-medium leading-[1.3] text-[#282828] sm:text-lg">
                   {item.title}
                 </h3>
 
-                <p className="font-jakarta mt-3 max-w-[550px] text-md leading-[1.35] text-[#444444]">
+                <p className="mt-3 max-w-[420px] break-words font-jakarta text-sm leading-[1.55] text-[#444444] sm:text-base">
                   {item.description}
                 </p>
               </div>
@@ -399,7 +401,7 @@ const WhyNexifire = () => {
         ) : (
           <div
             aria-hidden="true"
-            className="mt-10 min-h-[620px] sm:min-h-[360px] lg:mt-12 lg:min-h-[180px]"
+            className="mt-8 min-h-[620px] sm:mt-10 sm:min-h-[360px] lg:mt-12 xl:min-h-[190px]"
           />
         )}
       </div>

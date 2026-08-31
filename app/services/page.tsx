@@ -6,6 +6,14 @@ import React from "react";
 import BuildSmarter from "@/components/BuildSmarter";
 import FAQs from "@/components/FAQs";
 import GetInTouchSection from "@/components/GetInTouch";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Services: Specialized Growth Systems by NexiFire",
+  description:
+    "NexiFire deploys specialized brands for brand strategy, digital marketing, content creation, and website systems built to scale your business.",
+  pathname: "/services",
+});
 
 const page = () => {
   return (
@@ -46,8 +54,8 @@ const page = () => {
         <WhatWeDo heading="The NexiFire Model" cards={serviceWhatWeDoCards} />
       </div>
       <BuildSmarter
-        title={`Get a Custom Growth\nSystem and Build Your\nEcosystem`}
-        description={`We design and deploy the system that makes sure each service is handled\nby a specialist.`}
+        title={`Get a Custom Growth System and Build Your Ecosystem`}
+        description={`We design and deploy the system that makes sure each service is handled by a specialist.`}
         primaryButtonText="Consult With NexiFire"
         primaryButtonHref="/contact"
         secondaryButtonText="Visit Our Brands"

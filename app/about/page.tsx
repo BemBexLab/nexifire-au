@@ -6,14 +6,22 @@ import OurValues from "@/components/OurValues";
 import PageHero from "@/components/PageHero";
 import WhoWeAre from "@/components/WhoWeAre";
 import WhyNexifire from "@/components/WhyNexifire";
+import { createPageMetadata } from "@/lib/metadata";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "About NexiFire: A Global Ecosystem of Brands",
+  description:
+    "Learn how NexiFire's parent organization guides specialized brands in publishing, tech, and marketing to deliver focused, scalable growth.",
+  pathname: "/about",
+});
 
 const page = () => {
   return (
     <section className="relative overflow-hidden bg-white">
       <PageHero
         eyebrow="About NexiFire"
-        title={`A Global Ecosystem of\nIndustry Leaders.`}
+        title={`A Global Ecosystem of Industry Leaders.`}
         description="NexiFire is a strategic parent organization overseeing a diverse portfolio of specialized brands in media, technology, and digital growth. We provide the high level governance and operational infrastructure that allows our subsidiary companies to deliver world class execution and sustainable market leadership."
       />
       <WhoWeAre
@@ -37,8 +45,8 @@ const page = () => {
       <WhyNexifire />
       <OurValues />
       <BuildSmarter
-        title={`Ready to Align with\na Higher Standard\nof Growth?`}
-        description={`Stop searching for a vendor and start partnering with an ecosystem. Let the\nNexiFire Group provide the specialized expertise and strategic\ninfrastructure your brand needs to lead its industry.`}
+        title={`Ready to Align with a Higher Standard of Growth?`}
+        description={`Stop searching for a vendor and start partnering with an ecosystem. Let the NexiFire Group provide the specialized expertise and strategic infrastructure your brand needs to lead its industry.`}
         primaryButtonText="Explore Our Portfolio"
         primaryButtonHref="/brands"
         secondaryButtonText="Consult with the Head Office"
