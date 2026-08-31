@@ -30,7 +30,7 @@ const Blog = ({ post }: BlogProps) => {
 
             <div className="mt-10 space-y-10 md:mt-12 md:space-y-12">
               <h1
-                className="bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-3xl font-medium uppercase leading-tight text-transparent sm:text-4xl lg:text-4xl"
+                className="bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-3xl! font-medium uppercase leading-tight! text-transparent sm:text-4xl! lg:text-4xl!"
               >
                 {post.title}
               </h1>
@@ -42,13 +42,13 @@ const Blog = ({ post }: BlogProps) => {
                   {section.heading && (
                     section.headingLevel === 3 ? (
                       <h3
-                        className="max-w-[850px] bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-2xl font-medium leading-tight text-transparent sm:text-3xl lg:text-[32px]"
+                        className="max-w-[850px] bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-2xl! font-medium leading-tight! text-transparent sm:text-3xl! lg:text-[32px]!"
                       >
                         {section.heading}
                       </h3>
                     ) : (
                       <h2
-                        className="max-w-[850px] bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-2xl font-medium leading-tight text-transparent sm:text-3xl lg:text-[32px]"
+                        className="max-w-[850px] bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-left font-jakarta text-2xl! font-medium leading-tight! text-transparent sm:text-3xl! lg:text-[32px]!"
                       >
                         {section.heading}
                       </h2>
@@ -57,7 +57,7 @@ const Blog = ({ post }: BlogProps) => {
 
                   {section.subheading && (
                     <h4
-                      className="mt-3 max-w-[760px] font-jakarta text-lg font-semibold leading-tight text-[#B24002] sm:text-xl"
+                      className="mt-3 max-w-[760px] font-jakarta text-lg! font-semibold leading-tight! text-[#B24002] sm:text-xl!"
                     >
                       {section.subheading}
                     </h4>

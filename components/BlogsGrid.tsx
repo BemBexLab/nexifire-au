@@ -52,7 +52,7 @@ export default function BlogsGrid() {
             </div>
 
             <div className="flex flex-1 flex-col px-4 pb-5 pt-3">
-              <h3 className="max-w-[95%] text-[16px] font-medium leading-[1.35] text-[#2a2a2a]">
+              <h3 className="max-w-[95%] text-[16px]! font-medium leading-[1.35]! text-[#2a2a2a]">
                 {post.cardTitle ?? post.title}
               </h3>
 

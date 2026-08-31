@@ -75,7 +75,7 @@ const WhatWeDo = ({ heading, description, cards }: WhatWeDoProps) => {
               : "items-center"
           }`}
         >
-          <m.h1
+          <m.h2
             className={`whitespace-pre-line bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-4xl font-jakarta font-medium uppercase tracking-tight text-transparent md:text-5xl xl:text-6xl ${
               hasDescription ? "xl:absolute xl:left-0" : "text-center"
             } ${getTextClassName(
@@ -87,7 +87,7 @@ const WhatWeDo = ({ heading, description, cards }: WhatWeDoProps) => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {getTextValue(heading)}
-          </m.h1>
+          </m.h2>
           {hasDescription && description && (
             <m.p
               className={`w-full max-w-[370px] whitespace-pre-line text-sm text-[#777777] md:text-base xl:absolute xl:-right-19 ${getTextClassName(

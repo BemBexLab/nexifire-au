@@ -12,6 +12,8 @@ export type BlogPost = {
   id: number;
   slug: string;
   title: string;
+  metaTitle: string;
+  metaDescription: string;
   cardTitle?: string;
   description: string;
   image: string;
@@ -24,6 +26,9 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     slug: "the-nexifire-ecosystem-one-brand-six-pillars-infinite-growth",
     title: "The Nexifire Ecosystem: One Brand, Six Pillars, Infinite Growth",
+    metaTitle: "The NexiFire Ecosystem: Six Brands, One Growth System",
+    metaDescription:
+      "Discover how NexiFire brings six specialized brands together across publishing, technology, content, and marketing to create one scalable growth ecosystem. ",
     description:
       "Most people who come to us have already tried the traditional route.",
     image: "/images/01.png",
@@ -138,6 +143,9 @@ export const blogPosts: BlogPost[] = [
     id: 2,
     slug: "how-to-build-a-scalable-content-to-growth-system",
     title: "How to Build a Scalable Content to Growth System",
+    metaTitle: "How to Build a Scalable Content-to-Growth System",
+    metaDescription:
+      "Learn how to connect content, digital infrastructure, marketing, and performance optimization for a scalable system that drives long-term business growth.",
     description:
       "Most businesses today are creating content, but out of them, few are actually creating something that grows with them and leads to success.",
     image: "/images/02.png",
@@ -241,6 +249,9 @@ export const blogPosts: BlogPost[] = [
     id: 3,
     slug: "how-to-self-publish-a-book-in-2026",
     title: "How to Self-Publish a Book in 2026",
+    metaTitle: "How to Self-Publish a Book in 2026: Complete Guide",
+    metaDescription:
+      "Learn how to self-publish a book in 2026, from editing and professional design to publishing, distribution, author websites, and book marketing.",
     description:
       "If you’ve ever dreamed of seeing your name on a book cover, 2026 is the perfect year to turn that dream into reality.",
     image: "/images/3.png",
@@ -300,6 +311,9 @@ export const blogPosts: BlogPost[] = [
     id: 4,
     slug: "why-your-ads-are-not-converting",
     title: "Why Your Ads Are Not Converting (And What's Actually Holding You Back)",
+    metaTitle: "Why Your Ads Aren’t Converting and How to Fix Them",
+    metaDescription:
+      "Discover why your ads are not converting and how tracking, targeting, creative, landing pages, and campaign optimisation can improve performance.",
     description:
       "You spend the money. You set everything up. The clicks start coming in, and then absolutely nothing happens.",
     image: "/images/4.png",

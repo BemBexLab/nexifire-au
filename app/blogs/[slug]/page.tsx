@@ -1,6 +1,6 @@
 import Blog from "@/components/Blog";
 import { blogPosts, getBlogPostBySlug } from "@/data/blogs";
-import { siteUrl } from "@/lib/metadata";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -10,14 +10,17 @@ type BlogPageProps = {
   }>;
 };
 
+// Only posts included in the build-time data set are valid routes.
+export const dynamicParams = false;
+
 export const generateStaticParams = () =>
   blogPosts.map((post) => ({
     slug: post.slug,
   }));
 
-export const dynamicParams = false;
-
-export const generateMetadata = async ({ params }: BlogPageProps) => {
+export const generateMetadata = async ({
+  params,
+}: BlogPageProps): Promise<Metadata> => {
   const { slug } = await params;
   const post = getBlogPostBySlug(slug);
 
@@ -28,10 +31,10 @@ export const generateMetadata = async ({ params }: BlogPageProps) => {
   }
 
   return {
-    title: post.title,
-    description: post.description,
+    title: post.metaTitle,
+    description: post.metaDescription,
     alternates: {
-      canonical: new URL(`/blogs/${post.slug}`, siteUrl).toString(),
+      canonical: `/blogs/${post.slug}`,
     },
   };
 };
