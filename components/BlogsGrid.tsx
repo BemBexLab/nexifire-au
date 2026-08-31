@@ -5,6 +5,15 @@ import { motion } from "motion/react";
 import { SlArrowRight } from "react-icons/sl";
 
 export default function BlogsGrid() {
+  const sortedBlogPosts = [...blogPosts].sort(
+    (a, b) => {
+      const publishedAtDifference =
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+
+      return publishedAtDifference || b.id - a.id;
+    },
+  );
+
   return (
     <motion.section
       className="my-20 w-full px-4 md:px-8"
@@ -20,10 +29,10 @@ export default function BlogsGrid() {
         viewport={{ once: true, amount: 0.15 }}
         transition={{ staggerChildren: 0.1 }}
       >
-        {blogPosts.map((post) => (
+        {sortedBlogPosts.map((post) => (
           <motion.div
             key={post.slug}
-            className="overflow-hidden rounded-[14px] border border-[#e4e4e4] [contain-intrinsic-size:0_380px] [content-visibility:auto]"
+            className="flex flex-col overflow-hidden rounded-[14px] border border-[#e4e4e4] [contain-intrinsic-size:0_380px] [content-visibility:auto]"
             variants={{
               hidden: { opacity: 0, y: 34, scale: 0.98 },
               visible: { opacity: 1, y: 0, scale: 1 },
@@ -41,7 +50,7 @@ export default function BlogsGrid() {
               />
             </div>
 
-            <div className="px-4 pb-5 pt-3">
+            <div className="flex flex-1 flex-col px-4 pb-5 pt-3">
               <h3 className="max-w-[95%] text-[16px] font-medium leading-[1.35] text-[#2a2a2a]">
                 {post.cardTitle ?? post.title}
               </h3>
@@ -52,7 +61,7 @@ export default function BlogsGrid() {
 
               <a
                 href={`/blogs/${post.slug}`}
-                className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#d56b3d] transition hover:opacity-80"
+                className="mt-auto inline-flex items-center gap-2 pt-4 text-sm font-medium text-[#d56b3d] transition hover:opacity-80"
               >
                 Learn More
                 <span className="text-[15px] leading-none">

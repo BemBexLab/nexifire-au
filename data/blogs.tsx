@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Nexifire Ecosystem: One Brand, Six Pillars, Infinite Growth",
     description:
       "Most people who come to us have already tried the traditional route.",
-    image: "/images/nexifire-ecosystem-hero.png",
+    image: "/images/01.png",
     publishedAt: "2026-01-15",
     content: [
       {
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Build a Scalable Content to Growth System",
     description:
       "Most businesses today are creating content, but out of them, few are actually creating something that grows with them and leads to success.",
-    image: "/images/unnamed.png",
+    image: "/images/02.png",
     publishedAt: "2026-01-15",
     content: [
       {
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Self-Publish a Book in 2026",
     description:
       "If you’ve ever dreamed of seeing your name on a book cover, 2026 is the perfect year to turn that dream into reality.",
-    image: "/images/unnamed (1).png",
+    image: "/images/3.png",
     publishedAt: "2026-01-15",
     content: [
       {
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     title: "Why Your Ads Are Not Converting (And What's Actually Holding You Back)",
     description:
       "You spend the money. You set everything up. The clicks start coming in, and then absolutely nothing happens.",
-    image: "/images/unnamed.png",
+    image: "/images/4.png",
     publishedAt: "2026-01-15",
     content: [
       {
@@ -407,7 +407,11 @@ export const getBlogPostBySlug = (slug: string) =>
 export const getRecentBlogPosts = (limit = 3) =>
   [...blogPosts]
     .sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+      (a, b) => {
+        const publishedAtDifference =
+          new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+
+        return publishedAtDifference || b.id - a.id;
+      },
     )
     .slice(0, limit);

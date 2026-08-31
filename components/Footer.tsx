@@ -54,7 +54,7 @@ const FooterCTA = () => {
           </div>
 
           {/* Right Col div */}
-          <div className="grid md:mt-15 w-full grid-cols-1 justify-center gap-8 sm:grid-cols-2 lg:grid-cols-[130px_minmax(240px,430px)_165px] lg:gap-1">
+          <div className="grid md:mt-15 w-full grid-cols-1 justify-center gap-8 sm:grid-cols-2 lg:grid-cols-[130px_max-content_165px] lg:gap-x-6 lg:gap-y-1">
             <div className="w-full">
               <h4 className="mb-2 text-lg font-medium text-[#B24002]">
                 Quick Links
