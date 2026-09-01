@@ -125,7 +125,7 @@ export default function GetInTouchSection() {
           </h2>
 
           <p className="mx-auto max-w-[1050px] text-sm leading-relaxed text-[#8a8a8a] sm:text-base md:text-lg">
-            Your journey toward global growth starts with a single conversation.
+            Your journey towards global growth starts with a single conversation.
             Whether you&apos;re looking to build a legacy through publishing or
             scale your brand through high-performance digital infrastructure,
             our team is here to lead the way.
@@ -150,7 +150,7 @@ export default function GetInTouchSection() {
 
               <div className="border-b border-[#e8e8e8] py-[10px]">
                 <p className="text-base font-medium text-[#cc5d12] sm:text-lg">
-                  Specialized Expertise:
+                  specialised Expertise:
                 </p>
                 <p className="mt-[3px] text-base leading-[1.45] text-[#7f7f7f]">
                   Direct access to our network of publishing and tech leaders.

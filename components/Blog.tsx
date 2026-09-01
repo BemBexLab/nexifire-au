@@ -71,9 +71,11 @@ const Blog = ({ post }: BlogProps) => {
                           : "mt-6 space-y-6 text-[15px] leading-[1.9]"
                       }`}
                     >
-                      {section.paragraphs.map((paragraph, paragraphIndex) => (
-                        <p key={paragraphIndex}>{paragraph}</p>
-                      ))}
+                      {React.Children.toArray(section.paragraphs).map(
+                        (paragraph, paragraphIndex) => (
+                          <p key={paragraphIndex}>{paragraph}</p>
+                        ),
+                      )}
                     </div>
                   )}
                 </React.Fragment>

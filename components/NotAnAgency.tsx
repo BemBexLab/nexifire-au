@@ -114,7 +114,7 @@ const NotAnAgency = () => {
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.12 }}
             >
               NexiFire is not a single service provider. We are a group of
-              specialized brands built to solve different parts of business
+              specialised brands built to solve different parts of business
               growth.
             </m.p>
 

@@ -33,7 +33,7 @@ const brands: BrandItem[] = [
   {
     name: "Ink Founders AU",
     description:
-      "Ink Founders AU is where high-level ideas become professional manuscripts. Specialize in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
+      "Ink Founders AU is where high-level ideas become professional manuscripts. We specialise in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
     url: "https://www.inkfounders.com.au/",
     image: {
       src: "/icons/inkfounder logo-19 1.png",

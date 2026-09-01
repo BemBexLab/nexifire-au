@@ -94,7 +94,7 @@ const HomeHero = () => {
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   const heroDescription =
-    "NexiFire is a collective of specialized brands delivering strategy, \nmarketing, content, and digital systems designed to grow businesses with clarity and precision.";
+    "NexiFire is a collective of specialised brands delivering strategy, \nmarketing, content, and digital systems designed to grow businesses with clarity and precision.";
   const businessHeading = "Built For Businesses That Are Serious About Growth";
   const giftRibbonShapes = [
     { x: -40, y: -32, rotate: -62, scale: 1.05, delay: 0.05 },
@@ -426,7 +426,7 @@ const HomeHero = () => {
                   </p>
                   <p className="w-full text-[#5C5D5F] xl:text-[15px] 2xl:text-base">
                     Global Brands Scaled. Trusted by industry leaders to
-                    dominate their markets through our specialized ecosystem.
+                    dominate their markets through our specialised ecosystem.
                   </p>
 
                   {/* Loading Bar */}

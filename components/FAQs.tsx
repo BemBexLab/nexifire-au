@@ -14,7 +14,7 @@ const faqData: FAQItem[] = [
     question:
       "What is NexiFire, and how is it different from a traditional agency?",
     answer:
-      "NexiFire is a parent organization that operates a network of specialized brands. Where different brands offer separate services, instead of all being on one team. This produces high-quality work, deploys focused experts for each function, making sure of deeper expertise, better execution, and scalable results.",
+      "NexiFire is a parent organisation that operates a network of specialized brands. Where different brands offer separate services, instead of all being on one team. This produces high-quality work, deploys focused experts for each function, making sure of deeper expertise, better execution, and scalable results.",
   },
   {
     question: "Do you provide services directly?",
