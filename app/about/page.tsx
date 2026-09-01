@@ -22,7 +22,7 @@ const page = () => {
       <PageHero
         eyebrow="About NexiFire"
         title={`A Global Ecosystem of Industry Leaders.`}
-        description="NexiFire is a strategic parent organization overseeing a diverse portfolio of specialised brands in media, technology, and digital growth. We provide the high level governance and operational infrastructure that allows our subsidiary companies to deliver world class execution and sustainable market leadership."
+        description="NexiFire is a strategic parent organisation overseeing a diverse portfolio of specialised brands in media, technology, and digital growth. We provide the high level governance and operational infrastructure that allows our subsidiary companies to deliver world class execution and sustainable market leadership."
       />
       <WhoWeAre
         heading="Who We Are"

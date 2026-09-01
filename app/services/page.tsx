@@ -20,7 +20,7 @@ const page = () => {
     <section className="bg-white overflow-hidden">
       <PageHero
         eyebrow="How NexiFire Works"
-        title={`We Don’t Offer Services. We Deploy Specialized Systems for Growth.`}
+        title={`We Don’t Offer Services. We Deploy Specialised Systems for Growth.`}
         description={`NexiFire connects strategy, execution, and specialised expertise through a network of focused brands, so every part of your business is built to scale.`}
         primaryButtonText="Explore Our Portfolio"
         primaryButtonHref="/brands"

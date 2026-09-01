@@ -85,7 +85,6 @@ const OurBrands = () => {
             <motion.a
               key={brand.name}
               href={brand.url}
-              target="__blank"
               className="group relative block rounded-[18px] border border-[#e8e8e8] bg-[#f5f5f5] px-5 pb-20 pt-5 shadow-[0_4px_18px_rgba(0,0,0,0.04)] transition [contain-intrinsic-size:0_360px] [content-visibility:auto] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +105,7 @@ const OurBrands = () => {
                 {brand.name}
               </h3>
 
-              <p className="mt-4 text-[14px] leading-[1.4] text-[#444444]">
+              <p className="mt-4 text-[14px] leading-loose text-[#444444]">
                 {brand.description}
               </p>
 
