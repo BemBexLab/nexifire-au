@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Nexifire Ecosystem: One Brand, Six Pillars, Infinite Growth",
     metaTitle: "The NexiFire Ecosystem: Six Brands, One Growth System",
     metaDescription:
-      "Discover how NexiFire brings six specialized brands together across publishing, technology, content, and marketing to create one scalable growth ecosystem. ",
+      "Discover how NexiFire brings six specialised brands together across publishing, technology, content, and marketing to create one scalable growth ecosystem.",
     description:
       "Most people who come to us have already tried the traditional route.",
     image: "/images/01.png",
@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
       {
         paragraphs: [
           "Most people who come to us have already tried the traditional route.",
-          "They hired a freelancer for their book cover. Found someone else for editing. Googled their way through self-publishing platforms, Website development, and digital marketing services and optimization. Built a website on a template. Ran a few ads that didn't quite land. And after all of that, after all the time, money, and energy spent, the results still felt scattered. Disconnected. Like they were building a puzzle without ever seeing the full picture.",
+          "They hired a freelancer for their book cover. Found someone else for editing. Googled their way through self-publishing platforms, Website development, and digital marketing services and optimisation. Built a website on a template. Ran a few ads that didn't quite land. And after all of that, after all the time, money, and energy spent, the results still felt scattered. Disconnected. Like they were building a puzzle without ever seeing the full picture.",
           "That's not a talent problem. That's a system problem.",
           "And it's exactly the problem Nexifire was built to solve",
         ],
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Let's clear something up right away because this matters.",
           "Nexifire is not an agency. It's not a one-stop shop where a single generalist team tries to do everything at once. That model exists, and honestly? It produces average results across the board. Because no one person, and no one team, can genuinely master six completely different disciplines at the same time.",
-          "Nexifire is something different. It's a strategic parent ecosystem that oversees a portfolio of six specialized brands, each one built to master a specific area of author growth and digital business. Every brand operates independently, with its own dedicated team of experts. But they all operate under one unified strategy, one shared standard of quality, and one clear direction.",
+          "Nexifire is something different. It's a strategic parent ecosystem that oversees a portfolio of six specialised brands, each one built to master a specific area of author growth and digital business. Every brand operates independently, with its own dedicated team of experts. But they all operate under one unified strategy, one shared standard of quality, and one clear direction.",
           "That's the difference between scattered effort and a system that actually compounds.",
         ],
       },
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
         headingLevel: 3,
         paragraphs: [
           "Every great author's journey starts with a manuscript. But getting from a raw idea to a professionally published book that readers actually trust, that's a process most first-time authors seriously underestimate.",
-          "Ink Founders handles the entire journey. Book writing, editing, proofreading, self-publishing, platform optimization, and author growth strategy. Whether you're starting from a blank page or sitting on a half-finished draft that's been collecting digital dust for two years, Ink Founders brings the expertise to take your work from concept to published — and positioned to sell.",
+          "Ink Founders handles the entire journey. Book writing, editing, proofreading, self-publishing, platform optimisation, and author growth strategy. Whether you're starting from a blank page or sitting on a half-finished draft that's been collecting digital dust for two years, Ink Founders brings the expertise to take your work from concept to published — and positioned to sell.",
           "This isn't just about getting your book out there. It's about building your personal brand as an author from the very first page.",
         ],
       },
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
         subheading: "For the Stories That Demand More",
         paragraphs: [
           "Some books need more than a standard publishing process. Some stories are bigger, more layered, more complex, and they need a team that genuinely understands the craft of both writing and publishing at a deeper level.",
-          "The Quill Book serves authors whose work demands that extra level of attention. From fiction and non-fiction to specialized genres that require research, sensitivity, and creative precision, The Quill Book brings together story development, editorial expertise, and publishing strategy into one focused service. It's where ambitious authors bring their most important work.",
+          "The Quill Book serves authors whose work demands that extra level of attention. From fiction and non-fiction to specialised genres that require research, sensitivity, and creative precision, The Quill Book brings together story development, editorial expertise, and publishing strategy into one focused service. It's where ambitious authors bring their most important work.",
         ],
       },
       {
@@ -98,20 +98,20 @@ export const blogPosts: BlogPost[] = [
         subheading: "The Infrastructure and Marketing Engine Behind Your Platform",
         paragraphs: [
           // eslint-disable-next-line react/no-unescaped-entities
-          <Fragment key="web-founders-and-web-geeks-global-intro"><a className="text-red-500 hover:underline font-bold" href="https://www.webfoundersusa.com/">Web Founders</a> and <a className="text-red-500 hover:underline font-bold" href="https://webgeeksglobal.com/">Web Geeks Global</a> are Nexifire's twin execution brands for everything digital. Both teams specialize in website development across major e-commerce platforms and full-scale digital marketing, giving businesses the technical foundation and marketing firepower they need to grow online.</Fragment>,
-          "We create brand-focused digital experiences, including WordPress websites, Shopify stores, and fully customized eCommerce platforms. From logo design and Figma-based UI/UX to performance marketing, SEO, and other growth causing solutions, every service is designed to strengthen your brand and support long-term scalability.",
-          "Think of them as two dedicated squads working toward the same goal. Building your digital presence, driving the right traffic toward it, and making sure that traffic actually converts into readers, subscribers, and paying customers.",
+          <Fragment key="web-founders-and-web-geeks-global-intro"><a className="text-red-500 hover:underline font-bold" href="https://www.webfoundersusa.com/">Web Founders</a> and <a className="text-red-500 hover:underline font-bold" href="https://webgeeksglobal.com/">Web Geeks Global</a> are Nexifire's twin execution brands for everything digital. Both teams specialise in website development across major e-commerce platforms and full-scale digital marketing, giving businesses the technical foundation and marketing firepower they need to grow online.</Fragment>,
+          "We create brand-focused digital experiences, including WordPress websites, Shopify stores, and fully customised eCommerce platforms. From logo design and Figma-based UI/UX to performance marketing, SEO, and other growth causing solutions, every service is designed to strengthen your brand and support long-term scalability.",
+          "Think of them as two dedicated squads working towards the same goal. Building your digital presence, driving the right traffic towards it, and making sure that traffic actually converts into readers, subscribers, and paying customers.",
           "This isn't about running generic ads or putting up a basic website and calling it done. It's about building a real digital infrastructure, one that's designed from day one to scale alongside your author platform and your business.",
           "Every element is intentional. The website layout, the user experience, the campaign structure, and the performance data. Because your online presence isn't just a digital business card. It's where your entire content strategy lives and breathes.",
         ],
       },
       {
-        heading: "Why Six Specialized Brands Instead of One Big Team?",
+        heading: "Why Six Specialised Brands Instead of One Big Team?",
         paragraphs: [
           "This is the question we get asked most often. And it's a fair one.",
           "The answer comes down to one word: depth.",
-          "A generalist team can give you a competent book, a decent website, and a passable marketing campaign. But competent, decent, and passable don't build careers. They don't create author platforms that last. They don't generate the kind of results that compound over time and turn a first book into a long term creative business.",
-          "Specialization does that.",
+          "A generalist team can give you a competent book, a decent website, and a passable marketing campaign. But competent, decent, and passable don't build careers. They don't create author platforms that last. They don't generate the kind of results that compound over time and turn a first book into a long-term creative business.",
+          "Specialisation does that.",
           "When your book is handled by people who do nothing but books, your audiobook is produced by people who live and breathe audio, your brand story is crafted by people who understand narrative at a deep level, and your website and marketing are run by teams who do nothing but build and grow digital platforms, the quality of every single piece goes up dramatically.",
           "And when those pieces are connected under one unified strategy through Nexifire, the whole becomes far more powerful than the sum of its parts.",
           "That's not a tagline. That's just how well-built systems work.",
@@ -121,9 +121,9 @@ export const blogPosts: BlogPost[] = [
         heading: "What This Looks Like in Practice",
         paragraphs: [
           "Let's say you're an author with a finished manuscript or running a brand for IT services with a clear vision for what you want your career to look like.",
-          "You come to Nexifire. We assess where you are, where you want to go, and what the gap looks like. From there, we build a strategy and then deploy the right combination of specialized brands to execute it.",
+          "You come to Nexifire. We assess where you are, where you want to go, and what the gap looks like. From there, we build a strategy and then deploy the right combination of specialised brands to execute it.",
           // eslint-disable-next-line @next/next/no-html-link-for-pages
-          <Fragment key="ink-founders-in-practice"><a className="hover:underline font-bold text-red-500" href="https://www.inkfounders.com/">Ink Founders</a> takes your manuscript through editing, publishing, and platform optimization. Ink2Audiobook produces your audiobook and gets it distributed across major platforms. The Quill Book steps in if your project needs deeper creative development. Storyloom develops the content strategy that keeps your audience engaged between launches. And Web Founders and Web Geeks Global build the website, run the campaigns, and make sure more people find you every single month.</Fragment>,
+          <Fragment key="ink-founders-in-practice"><a className="hover:underline font-bold text-red-500" href="https://www.inkfounders.com/">Ink Founders</a> takes your manuscript through editing, publishing, and platform optimisation. Ink2Audiobook produces your audiobook and gets it distributed across major platforms. The Quill Book steps in if your project needs deeper creative development. Storyloom develops the content strategy that keeps your audience engaged between launches. And Web Founders and Web Geeks Global build the website, run the campaigns, and make sure more people find you every single month.</Fragment>,
           "You're not managing six different vendors. You're working within one ecosystem, with one strategic direction, and one standard of quality across every single touchpoint.",
           "That's what makes it different. And that's what makes it work.",
         ],
@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Growth Isn't One Dimensional",
         paragraphs: [
           "Real, sustainable growth, the kind that doesn't depend on one viral moment or one lucky launch, comes from combining strong storytelling, reliable technology, and high performing marketing systems. It comes from building something connected, not just something busy.",
-          "Whether you're publishing your first book or scaling an existing author brand, the Nexifire ecosystem gives you the specialized expertise and strategic infrastructure to do it right. Not just for the launch. For the long term.",
+          "Whether you're publishing your first book or scaling an existing author brand, the Nexifire ecosystem gives you the specialised expertise and strategic infrastructure to do it right. Not just for the launch. For the long-term.",
           "Because the goal was never just to publish a book.",
           "The goal is to build something that lasts.",
         ],
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Build a Scalable Content to Growth System",
     metaTitle: "How to Build a Scalable Content-to-Growth System",
     metaDescription:
-      "Learn how to connect content, digital infrastructure, marketing, and performance optimization for a scalable system that drives long-term business growth.",
+      "Learn how to connect content, digital infrastructure, marketing, and performance optimisation to build a scalable system that drives long-term business growth.",
     description:
       "Most businesses today are creating content, but out of them, few are actually creating something that grows with them and leads to success.",
     image: "/images/02.png",
@@ -154,13 +154,13 @@ export const blogPosts: BlogPost[] = [
       {
         paragraphs: [
           "Most businesses today are creating content, but out of them, few are actually creating something that grows with them and leads to success. You’ll see brands publishing blogs, posting on social media, even writing books, yet nothing truly compounds. No doubt the effort is there, but the results stay inconsistent. That’s because content, on its own, doesn’t create growth. What creates growth is a system.",
-          "A scalable content-to-growth system is not about doing more. It’s about connecting what you already do in a way that produces momentum. When content is aligned with infrastructure, distribution, and performance, it goes far beyond just a single activity and starts becoming a long term asset. That shift is what separates brands that stay stuck from those that scale.",
+          "A scalable content-to-growth system is not about doing more. It’s about connecting what you already do in a way that produces momentum. When content is aligned with infrastructure, distribution, and performance, it goes far beyond just a single activity and starts becoming a long-term asset. That shift is what separates brands that stay stuck from those that scale.",
         ],
       },
       {
         heading: "Why Most Content Fails to Deliver Results",
         paragraphs: [
-          "The biggest issue isn’t the quality of content, but its disconnection. Content is often created without a clear path to conversion. A blog might be well written, but it does not promise reaching the right audience. A website might look impressive, but fail to generate leads or engage the visitors. Marketing campaigns may bring traffic, but without the right structure in place, that traffic disappears without impact.",
+          "The biggest issue isn’t the quality of content, but its disconnection. Content is often created without a clear path to conversion. A blog might be well-written, but it does not promise reaching the right audience. A website might look impressive, but fail to generate leads or engage the visitors. Marketing campaigns may bring traffic, but without the right structure in place, that traffic disappears without impact.",
           "This happens because different parts of the business operate in silos. Content is created in one place, websites are built in another, and marketing is managed somewhere else entirely. There is no unified direction, no shared system tying everything together. In results, each effort exists on its own, and growth never compounds.",
         ],
       },
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Content may bring attention, but infrastructure tells everything about what happens next. Without a strong foundation, even the best content fails to come up with meaningful results. This is where most businesses do not perform well. They invest a lot in creating content but overlook the systems that convert attention into action.",
           "A well-structured website plays an important role in this process. It is not just a place for information, but a platform designed to guide users working to bring a specific outcome. When built with a focus on conversion, clarity, and user flow, a website is not just a digital presence but becomes a growth tool.",
-          <>Teams that specialize in this area, such as <a className="text-red-500 hover:underline font-bold" href="https://www.webfoundersusa.com/">Web Founders</a>, focus on creating environments where visitors are not just informed, but get proper directions. Every element is intentional, from the website content to layout, to structure, responsiveness, and messaging, making sure that traffic generated by content is not wasted.</>,
+          <>Teams that specialise in this area, such as <a className="text-red-500 hover:underline font-bold" href="https://www.webfoundersusa.com/">Web Founders</a>, focus on creating environments where visitors are not just informed, but get proper directions. Every element is intentional, from the website content to layout, to structure, responsiveness, and messaging, making sure that traffic generated by content is not wasted.</>,
         ],
       },
       {
@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
         // subheading: "Storytelling That Builds Brands",
         paragraphs: [
           "Once content and infrastructure are aligned, the next step is amplification. This is where marketing plays its role, not as a standalone effort but as a continuation of the system. Instead of trying to force results through constant spending, the focus shifts to scaling what is already working.",
-          <>Performance based marketing allows businesses to take proven content and extend its reach. When done in the right way, it makes sure that the right message reaches the right audience at the right time. This approach is reflected in structured growth environments like <a className="text-red-500 hover:underline font-bold" href="https://webgeeksglobal.com/">Web Geeks Global</a>, where campaigns are built on data, refined through testing, and optimized for long-term performance.</>,
+          <>Performance-based marketing allows businesses to take proven content and extend its reach. When done in the right way, it makes sure that the right message reaches the right audience at the right time. This approach is reflected in structured growth environments like <a className="text-red-500 hover:underline font-bold" href="https://webgeeksglobal.com/">Web Geeks Global</a>, where campaigns are built on data, refined through testing, and optimised for long-term performance.</>,
           <>The difference here is subtle but powerful. Growth is no longer dependent on guesswork. It becomes predictable, measurable, and repeatable.</>,
         ],
       },
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Start with a Strong Manuscript",
         paragraphs: [
-          <>Writing a book is just the first step. Finishing a draft is exciting, but revising, editing, and refining your words is what turns a manuscript into a book that readers will truly enjoy. This is where professional support becomes invaluable. Many authors trust <a className="font-bold text-red-300 hover:underline" href="https://www.inkfounders.com/">Ink Founders</a>, a Nexifire brand that specializes in helping writers polish their manuscripts. From developmental editing to line editing and proofreading, Ink Founders ensures your story is not only compelling but also polished and professional. A skilled editor transforms a good manuscript into a book that stands out in the market.</>,
+          <>Writing a book is just the first step. Finishing a draft is exciting, but revising, editing, and refining your words is what turns a manuscript into a book that readers will truly enjoy. This is where professional support becomes invaluable. Many authors trust <a className="font-bold text-red-300 hover:underline" href="https://www.inkfounders.com/">Ink Founders</a>, a Nexifire brand that specialises in helping writers polish their manuscripts. From developmental editing to line editing and proofreading, Ink Founders ensures your story is not only compelling but also polished and professional. A skilled editor transforms a good manuscript into a book that stands out in the market.</>,
         ],
       },
       {
@@ -286,7 +286,7 @@ export const blogPosts: BlogPost[] = [
         // headingLevel: 3,
         // subheading: "Your Words, Heard by the World",
         paragraphs: [
-          <>Even the best books need visibility to succeed. Marketing often feels like a separate task, but with the right approach, it can seamlessly complement the publishing process. <a href="https://thequillbook.com/">The Quill Book</a>, a Nexifire brand, helps authors promote their work effectively. From social media campaigns to email newsletters, every marketing effort is aligned with the publishing strategy, ensuring your book reaches the right readers. This coordinated approach makes self publishing not only easier but also more impactful.</>,
+          <>Even the best books need visibility to succeed. Marketing often feels like a separate task, but with the right approach, it can seamlessly complement the publishing process. <a href="https://thequillbook.com/">The Quill Book</a>, a Nexifire brand, helps authors promote their work effectively. From social media campaigns to email newsletters, every marketing effort is aligned with the publishing strategy, ensuring your book reaches the right readers. This coordinated approach makes self-publishing not only easier but also more impactful.</>,
         ],
       },
       {
@@ -294,7 +294,7 @@ export const blogPosts: BlogPost[] = [
         // headingLevel: 3,
         // subheading: "For the Stories That Demand More",
         paragraphs: [
-          "Self publishing in 2026 is about more than releasing a book. It’s about sharing your voice, building a platform, and creating new opportunities beyond the page. Working with Nexifire’s network of specialized brands allows you to focus on storytelling while experts handle publishing, design, and marketing. Your work can lead to speaking engagements, workshops, or even courses, turning your book into a foundation for long-term growth as an author.",
+          "Self-Publishing in 2026 is about more than releasing a book. It’s about sharing your voice, building a platform, and creating new opportunities beyond the page. Working with Nexifire’s network of specialised brands allows you to focus on storytelling while experts handle publishing, design, and marketing. Your work can lead to speaking engagements, workshops, or even courses, turning your book into a foundation for long-term growth as an author.",
         ],
       },
       {
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
         // headingLevel: 3,
         // subheading: "Storytelling That Builds Brands",
         paragraphs: [
-          "With Ink Founders guiding your writing, Web Founders supporting your website development and marketing, Storyloom managing your publishing process, and The Quill Book enhancing your marketing reach, self publishing becomes a structured, fulfilling experience. Your story is unique, and in 2026, you have the tools and support to bring it to readers everywhere. It’s no longer about navigating a complex system alone; it’s about joining a network that helps your creativity thrive.",
+          "With Ink Founders guiding your writing, Web Founders supporting your website development and marketing, Storyloom managing your publishing process, and The Quill Book enhancing your marketing reach, self-publishing becomes a structured, fulfilling experience. Your story is unique, and in 2026, you have the tools and support to bring it to readers everywhere. It’s no longer about navigating a complex system alone; it’s about joining a network that helps your creativity thrive.",
         ],
       },
     ],
@@ -335,10 +335,10 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "You're Optimizing for One Thing but Expecting Another",
+        heading: "You're Optimising for One Thing but Expecting Another",
         paragraphs: [
           <>This one is subtle, and it breaks a lot of campaigns</>,
-          <>Say you're running a traffic objective, but your actual goal is leads. Or you're optimizing for engagement and measuring success by sales. The platform will deliver exactly what you asked for, and you'll wonder why it "isn't working."</>,
+          <>Say you're running a traffic objective, but your actual goal is leads. Or you're optimising for engagement and measuring success by sales. The platform will deliver exactly what you asked for, and you'll wonder why it "isn't working."</>,
           <>Platforms are not mind readers. They execute on the objective you set. If that objective doesn't match what you actually want to happen, the whole campaign is pointed in the wrong direction from day one.</>,
           <>Getting this alignment right, campaign goal matching business goal, is one of the most fundamental things we focus on at Nexifire.</>,
         ],
@@ -358,7 +358,7 @@ export const blogPosts: BlogPost[] = [
         // subheading: "Your Words, Heard by the World",
         paragraphs: [
           "A clean design doesn't make someone stop scrolling. A message that hits them where they actually are, that does.",
-          <>People are moving fast. They're not admiring your color palette. They're scanning for something that feels relevant to their life, their problem, their situation right now.</>,
+          <>People are moving fast. They're not admiring your colour palette. They're scanning for something that feels relevant to their life, their problem, their situation right now.</>,
           <>"Best services." "Contact us today." "We've been in business for 20 years." Nobody is stopping for that. It doesn't mean anything to them.</>,
           <>The ads that actually convert are specific. They name a real problem. They offer a real solution. They make the person feel like the ad was written for them, because in a good campaign, it basically was.</>
         ],
@@ -379,7 +379,7 @@ export const blogPosts: BlogPost[] = [
         // subheading: "Storytelling That Builds Brands",
         paragraphs: [
           "Platforms need time and data to figure out who to show your ads to. That's just how they work.",
-          <>Every time you edit the campaign, change the budget, or swap out the creative, the learning process resets. The algorithm starts over. And if you keep doing that, the campaign never stabilizes, performance bounces around, and you never get clean enough data to make real decisions.</>,
+          <>Every time you edit the campaign, change the budget, or swap out the creative, the learning process resets. The algorithm starts over. And if you keep doing that, the campaign never stabilises, performance bounces around, and you never get clean enough data to make real decisions.</>,
           <>Patience isn't passive. Letting a campaign breathe and actually gather data is an active, strategic choice.</>,
         ],
       },
@@ -398,7 +398,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "This is the one that stings a little.",
           "Ads don't grow a business by themselves. They accelerate whatever is already in place. If the foundation is shaky, no real funnel, no clear audience journey, no strategy connecting the pieces, then running more ads just speeds up the burn rate.",
-          "A lot of businesses are in this position without realizing it. They're running campaigns, but there's no actual system underneath them. Just ads pointing to pages, with no thought given to what happens next.",
+          "A lot of businesses are in this position without realising it. They're running campaigns, but there's no actual system underneath them. Just ads pointing to pages, with no thought given to what happens next.",
           "That's the core of what Nexifire is built around. Not just running campaigns, but building the structure that makes those campaigns actually produce something. Strategy, creative, targeting, conversion all working together instead of existing as separate, disconnected pieces.",
         ],
       },

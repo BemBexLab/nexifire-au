@@ -29,11 +29,11 @@ const introParagraphs: React.ReactNode[] = [
 
 const useOfWebsiteItems = [
   "Submit information through our forms that is false, misleading, or that impersonates another person or entity",
-  "Attempt to gain unauthorized access to any part of the website, our systems, or related accounts",
+  "Attempt to gain unauthorised access to any part of the website, our systems, or related accounts",
   "Use any automated tool, bot, scraper, or similar technology to extract data from the website without our prior written consent",
   "Transmit any virus, malware, or other harmful code through the website",
   "Use the website to harass, defame, or violate the legal rights of others",
-  "Use the website for any unlawful, fraudulent, or unauthorized commercial purpose",
+  "Use the website for any unlawful, fraudulent, or unauthorised commercial purpose",
 ];
 
 type SectionWrapperProps = {
@@ -145,7 +145,7 @@ const TermsContent = () => {
             </p>
             <p>
               Any information, materials, or content you submit to us through
-              consultation forms, career applications, or other inquiries
+              consultation forms, career applications, or other enquiries
               (collectively, "Submitted Information") remains subject to our
               Privacy Policy. By submitting such information, you confirm that
               you have the right to share it and that doing so does not infringe
@@ -173,7 +173,7 @@ const TermsContent = () => {
             <p>
               By submitting a consultation request, contact form, or providing
               your phone number on this website, you consent to receive
-              communications from NexiFire related to your inquiry, including by
+              communications from NexiFire related to your enquiry, including by
               phone, email, or SMS text message. Message frequency may vary, and
               message/data rates may apply depending on your carrier.
             </p>

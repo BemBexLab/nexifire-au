@@ -43,8 +43,8 @@ const introParagraphs: React.ReactNode[] = [
 ];
 
 const informationWeCollectItems = [
-  "Contact information, such as your name, email address, phone number, and mailing address.",
-  "Business information, such as your company name, company size, industry, and project details, is submitted through consultation requests or inquiry forms.",
+  "Contact information, such as your name, email address, phone number, and postal address.",
+  "Business information, such as your company name, company size, industry, and project details, is submitted through consultation requests or enquiry forms.",
   "Career and application information, such as your resume, cover letter, and work history, is required when you apply for a role with NexiFire or one of our brands.",
   "Preference information, such as the services you're interested in, marketing preferences, and communication history.",
 ];
@@ -61,8 +61,8 @@ const howWeUseYourInformationItems = [
 ];
 
 const informationSharingItems: React.ReactNode[] = [
-  <><b>Within our ecosystem of brands,</b> where necessary to connect your inquiry with the specialized brand or team best suited to assist you.</>,
-  <><b>With service providers</b> who support our business operations (for example, hosting, analytics, or email delivery providers), who are authorized to use your information only to provide those services to us.</>,
+  <><b>Within our ecosystem of brands,</b> where necessary to connect your enquiry with the specialised brand or team best suited to assist you.</>,
+  <><b>With service providers</b> who support our business operations (for example, hosting, analytics, or email delivery providers), who are authorised to use your information only to provide those services to us.</>,
   <><b>As required by law,</b> such as to comply with a subpoena, legal process, or government request, or to protect our rights, your safety, or the safety of others.</>,
   <><b>In connection with a business transaction,</b> if NexiFire is involved in a merger, acquisition, or sale of assets, you will be notified of any resulting change in how your information is handled.</>,
   <><b>With your consent,</b> to any other third party, where you have given us prior permission to do so.</>,
@@ -265,7 +265,7 @@ const PrivacyContent = () => {
             <p>
               If you provide your mobile number through our website (for
               example, via a consultation or contact form), you consent to
-              receive calls or text messages from us related to your inquiry and
+              receive calls or text messages from us related to your enquiry and
               our services. We will not share your mobile number with third
               parties without your consent, except as required by law. You may
               opt out of text communications at any time by replying STOP or by

@@ -16,8 +16,8 @@ const page = () => {
     <section className="bg-white overflow-hidden">
       <PageHero
         eyebrow="Blog"
-        title={`Our Latest Blogs`}
-        description={`Stay updated with practical ideas and system driven strategies across publishing, digital growth, and technology. Our team is built to help you scale with clarity.`}
+        title={`Our Latest Articles`}
+        description={`Stay up to date with practical ideas and system-driven strategies across publishing, digital growth, and technology. Our team is built to help you scale with clarity.`}
       />
       <BlogsGrid />
       <LazyGetInTouch />
