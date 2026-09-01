@@ -141,7 +141,7 @@ const TermsContent = () => {
             </p>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 sm:gap-4">
+              {/* <div className="flex items-center gap-3 sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
                   <FaPhoneAlt color="#FFFFFF" size={18} />
                 </div>
@@ -151,7 +151,7 @@ const TermsContent = () => {
                 >
                   <b>United States:</b> (470) 470-7520
                 </a>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3 sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
@@ -177,7 +177,7 @@ const TermsContent = () => {
                 </a>
               </div>
 
-              <div className="flex items-start gap-3 sm:items-center sm:gap-4">
+              {/* <div className="flex items-start gap-3 sm:items-center sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
                   <FaLocationDot color="#FFFFFF" size={18} />
                 </div>
@@ -185,7 +185,7 @@ const TermsContent = () => {
                   <b>United States Office:</b> 2300 Lakeview Pkwy, Alpharetta,
                   GA 30009
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex items-start gap-3 sm:items-center sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">

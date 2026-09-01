@@ -114,8 +114,8 @@ const PrivacyContent = () => {
               </p>
               <p>
                 However, information may be shared internally within our
-                ecosystem of specialized brands where necessary to better
-                address your inquiry or align you with the appropriate team.
+                ecosystem of specialised brands where necessary to better
+                address your enquiry or align you with the appropriate team.
               </p>
             </div>
           </section>
@@ -126,7 +126,7 @@ const PrivacyContent = () => {
             </h2>
             <p className="text-base leading-relaxed text-gray-500 sm:text-lg">
               We take reasonable steps to protect your information from
-              unauthorized access, misuse, or disclosure. While no digital
+              unauthorised access, misuse, or disclosure. While no digital
               platform can guarantee complete security, we are committed to
               maintaining secure systems and processes.
             </p>
@@ -175,7 +175,7 @@ const PrivacyContent = () => {
             </p>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 sm:gap-4">
+              {/* <div className="flex items-center gap-3 sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
                   <FaPhoneAlt color="#FFFFFF" size={18} />
                 </div>
@@ -185,7 +185,7 @@ const PrivacyContent = () => {
                 >
                   <b>United States:</b> (470) 470-7520
                 </a>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-3 sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
@@ -211,14 +211,14 @@ const PrivacyContent = () => {
                 </a>
               </div>
 
-              <div className="flex items-start gap-3 sm:items-center sm:gap-4">
+              {/* <div className="flex items-start gap-3 sm:items-center sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
                   <FaLocationDot color="#FFFFFF" size={18} />
                 </div>
                 <span className="text-base text-gray-500 sm:text-lg">
                   <b>United States Office:</b> 2300 Lakeview Pkwy, Alpharetta, GA 30009
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex items-start gap-3 sm:items-center sm:gap-4">
                 <div className="shrink-0 rounded bg-[#B24002] p-2 text-white">
