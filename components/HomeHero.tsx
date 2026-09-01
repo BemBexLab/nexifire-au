@@ -94,7 +94,7 @@ const HomeHero = () => {
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   const heroDescription =
-    "NexiFire is a collective of specialised brands delivering strategy, \nmarketing, content, and digital systems designed to grow businesses with clarity and precision.";
+    "NexiFire is a collective of specialised brands delivering strategy, marketing, content, and digital systems designed to grow businesses with clarity and precision.";
   const businessHeading = "Built For Businesses That Are Serious About Growth";
   const giftRibbonShapes = [
     { x: -40, y: -32, rotate: -62, scale: 1.05, delay: 0.05 },
@@ -298,6 +298,7 @@ const HomeHero = () => {
                   <RichTextLetterReveal
                     text={heroDescription}
                     enabled={shouldAnimate}
+                    preserveWords
                   />
                 </p>
               </div>

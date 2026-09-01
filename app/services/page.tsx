@@ -22,6 +22,10 @@ const page = () => {
         eyebrow="How NexiFire Works"
         title={`We Don’t Offer Services. We Deploy Specialized Systems for Growth.`}
         description={`NexiFire connects strategy, execution, and specialised expertise through a network of focused brands, so every part of your business is built to scale.`}
+        primaryButtonText="Explore Our Portfolio"
+        primaryButtonHref="/brands"
+        secondaryButtonText="Get a Growth Strategy"
+        secondaryButtonHref="/contact"
       />
       <WhoWeAre
         heading={`The NexiFire Advantage: Built for Depth, Designed\nto Scale`}

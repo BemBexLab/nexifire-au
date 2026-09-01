@@ -35,18 +35,17 @@ export default function Home() {
       </div>
       <WhatWeDo
         heading="What We Do"
-        description={`Through our brands, we deliver integrated solutions across key growth
-areas.`}
+        description={`Through our brands, we deliver integrated solutions across key growth areas.`}
         cards={whatWeDoCards}
       />
       <NotAnAgency />
       <BuildSmarter
         title={`BUILD SMARTER. GROW FASTER.`}
         description={`Whether you're building a brand or scaling one, NexiFire gives you the structure, strategy, and execution to move forward with clarity.`}
-        primaryButtonText="Let's Talk"
-        primaryButtonHref="/contact"
-        secondaryButtonText="See Our Work"
-        secondaryButtonHref="/brands"
+        primaryButtonText="Explore Our Brands"
+        primaryButtonHref="/brands"
+        secondaryButtonText="Get Started"
+        secondaryButtonHref="/contact"
         backgroundImageSrc="/images/Frame 417.png"
         backgroundImageAlt="Team meeting"
         stats={[

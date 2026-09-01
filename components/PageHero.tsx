@@ -4,6 +4,8 @@ import React from "react";
 import { motion, type Variants } from "motion/react";
 import TextFluxUnveil from "./TextFluxUnveil";
 import Image from "next/image";
+import Link from "next/link";
+import { TfiArrowTopRight } from "react-icons/tfi";
 
 type Logo = {
   id: number;
@@ -16,6 +18,10 @@ type PageHeroProps = {
   title?: string;
   description?: string;
   logos?: Logo[];
+  primaryButtonText?: string;
+  primaryButtonHref?: string;
+  secondaryButtonText?: string;
+  secondaryButtonHref?: string;
 };
 
 const defaultLogos: Logo[] = [
@@ -116,9 +122,25 @@ const PageHero = ({
   title = defaultTitle,
   description = defaultDescription,
   logos = defaultLogos,
+  primaryButtonText,
+  primaryButtonHref,
+  secondaryButtonText,
+  secondaryButtonHref,
 }: PageHeroProps) => {
   const hasEyebrow = eyebrow.trim().length > 0;
-  const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
+  const buttonConfig =
+    primaryButtonText &&
+    primaryButtonHref &&
+    secondaryButtonText &&
+    secondaryButtonHref
+      ? {
+          primaryButtonText,
+          primaryButtonHref,
+          secondaryButtonText,
+          secondaryButtonHref,
+        }
+      : null;
+  const marqueeLogos = [...logos, ...logos];
 
   return (
     <section className="w-full bg-white">
@@ -161,6 +183,54 @@ const PageHero = ({
           >
             {description}
           </motion.p>
+
+          {buttonConfig && (
+            <motion.div
+              variants={heroItemVariants}
+              className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
+            >
+            <motion.div
+              whileHover={{
+                y: -3,
+                scale: 1.02,
+                boxShadow: "0 10px 24px rgba(178,64,2,0.35)",
+              }}
+              whileTap={{ y: 0, scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 320, damping: 20 }}
+            >
+              <Link
+                href={buttonConfig.primaryButtonHref}
+                className="flex min-h-[52px] w-fit items-center justify-center gap-3 whitespace-nowrap rounded-lg px-5 py-3 text-base font-light text-white md:text-lg"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #B24002 0%, #FF5B01 100%)",
+                }}
+              >
+                {buttonConfig.primaryButtonText}
+                <motion.span
+                  whileHover={{ x: 4, y: -2 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
+                >
+                  <TfiArrowTopRight size={20} />
+                </motion.span>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -3, scale: 1.02 }}
+              whileTap={{ y: 0, scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 320, damping: 20 }}
+            >
+              <Link
+                href={buttonConfig.secondaryButtonHref}
+                className="flex min-h-[52px] w-fit items-center justify-center gap-3 whitespace-nowrap rounded-lg border border-black/20 bg-white/20 px-5 py-3 text-base font-light text-black shadow-[0_8px_32px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.7)] backdrop-blur-xl transition hover:border-black/35 hover:bg-white/35 md:text-lg"
+              >
+                {buttonConfig.secondaryButtonText}
+                <TfiArrowTopRight className="text-black" size={20} />
+              </Link>
+            </motion.div>
+            </motion.div>
+          )}
         </motion.div>
 
         <motion.div
@@ -186,11 +256,13 @@ const PageHero = ({
                       animate="visible"
                       className="flex min-w-[140px] shrink-0 items-center justify-center px-4 sm:min-w-[165px] sm:px-5 lg:min-w-[190px] lg:px-6"
                     >
-                      <img
+                      <Image
                         src={logo.src}
                         alt={logo.name ? `${logo.name} logo` : `Client logo ${logo.id}`}
+                        width={190}
+                        height={56}
                         className="h-12 w-auto max-w-[130px] shrink-0 object-contain sm:h-14 sm:max-w-[150px] lg:max-w-[170px]"
-                        loading="lazy"
+                        sizes="(max-width: 639px) 130px, (max-width: 1023px) 150px, 170px"
                       />
                     </motion.div>
                   ))}

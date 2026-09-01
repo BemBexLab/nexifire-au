@@ -199,7 +199,10 @@ export default function GetInTouchSection() {
             </div>
           </div>
 
-          <div className="h-full w-full rounded-[8px] border border-[#e6e6e6] bg-[#f7f7f7] p-4 shadow-[0_10px_28px_rgba(0,0,0,0.05)] sm:p-[18px]">
+          <div
+            suppressHydrationWarning
+            className="h-full w-full rounded-[8px] border border-[#e6e6e6] bg-[#f7f7f7] p-4 shadow-[0_10px_28px_rgba(0,0,0,0.05)] sm:p-[18px]"
+          >
             <h3 className="py-2 text-xl font-semibold uppercase leading-[1.15] text-[#333333] sm:text-2xl">
               FILL THIS FORM TO GET FASTER RESPONSE
             </h3>
