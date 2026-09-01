@@ -30,11 +30,11 @@ const HowWeWork = () => {
           </h2>
 
           <p className="mt-4 max-w-[620px] break-words font-jakarta text-lg text-[#777777] sm:mt-6">
-            Our organization believes that excellent results emerge when people
+            Our organisation believes that excellent results emerge when people
             have a complete understanding of their tasks and work together while
             developing their skills. At NexiFire, you’ll join a work environment
             where teams work together to support your initiatives and teams work
-            together to achieve their goals. Our organization creates a
+            together to achieve their goals. Our organisation creates a
             workplace environment that enables you to acquire new skills while
             developing your abilities to perform work that has a substantial
             impact.

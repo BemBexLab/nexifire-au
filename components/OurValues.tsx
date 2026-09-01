@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const values = [
   {
-    title: "Specialization",
+    title: "Specialisation",
     description: "Each of our brands is created to master one specific area.",
   },
   {

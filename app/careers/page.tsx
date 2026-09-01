@@ -8,7 +8,7 @@ import React from "react";
 export const metadata = createPageMetadata({
   title: "Careers: Join the NexiFire Growth Ecosystem",
   description:
-    "Build your career with NexiFire's network of specialized brands. Explore internships and open roles in tech, marketing, and content.",
+    "Build your career with NexiFire's network of specialised brands. Explore internships and open roles in tech, marketing, and content.",
   pathname: "/careers",
 });
 
@@ -18,7 +18,7 @@ const page = () => {
       <PageHero
         eyebrow="Career"
         title={`Join NexiFire`}
-        description={`Join a growing ecosystem of specialized brands where your skills are valued, your growth is supported, and your work contributes to creating the results you want`}
+        description={`Join a growing ecosystem of specialised brands where your skills are valued, your growth is supported, and your work contributes to creating the results you want`}
       />
       <HowWeWork />
       <WhyYouBelongHere />

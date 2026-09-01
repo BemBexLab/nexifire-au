@@ -90,7 +90,7 @@ export const serviceWhatWeDoCards: WhatWeDoCard[] = [
     ),
   },
   {
-    title: "Specialized Deployment",
+    title: "Specialised Deployment",
     description: (
       <>
         <ul className="list-outside list-disc space-y-1 pl-5 text-[14px] leading-[1.7] text-[#444444] marker:text-[#444444]">
@@ -294,7 +294,7 @@ export const serviceWhatWeDoCards: WhatWeDoCard[] = [
     ),
   },
   {
-    title: "Optimization & Scaling",
+    title: "Optimisation & Scaling",
     description: (
       <>
         <ul className="list-outside list-disc space-y-1 pl-5 text-[14px] leading-[1.7] text-[#444444] marker:text-[#444444]">

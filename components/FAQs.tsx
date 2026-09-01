@@ -14,52 +14,52 @@ const faqData: FAQItem[] = [
     question:
       "What is NexiFire, and how is it different from a traditional agency?",
     answer:
-      "NexiFire is a parent organisation that operates a network of specialized brands. Where different brands offer separate services, instead of all being on one team. This produces high-quality work, deploys focused experts for each function, making sure of deeper expertise, better execution, and scalable results.",
+      "NexiFire is a parent organisation that operates a network of specialised brands. Where different brands offer separate services, instead of all being on one team. This produces high-quality work, deploys focused experts for each function, making sure of deeper expertise, better execution, and scalable results.",
   },
   {
     question: "Do you provide services directly?",
     answer:
-      "Yes. Through our ecosystem of specialized brands, we provide focused services based on your business needs and growth stage.",
+      "NexiFire does not operate like a traditional service provider. We assess and design the strategy and oversee execution, while our specialised brands handle each function with dedicated expertise.",
   },
   {
     question: "How does your ecosystem work?",
     answer:
-      "Each brand in the NexiFire ecosystem is built to solve a specific business need. That lets us combine specialized execution with coordinated growth strategy.",
+      "We start by understanding your business and developing a clear growth strategy. From there, we assign the right specialised brands for each area, such as publishing, technology, or marketing, while maintaining centralised coordination and performance tracking.",
   },
   {
     question: "Why do you use multiple brands instead of one team?",
     answer:
-      "Because specialization creates stronger outcomes. Each brand is designed to go deeper in its area rather than offering broad but surface-level support.",
+      "Because specialisation delivers better results. Each brand is built to master one specific area, which allows for higher quality execution compared to a generalist team trying to do everything, and not come up with high-quality results",
   },
   {
     question: "Will I be working with multiple teams?",
     answer:
-      "Not always. We keep the process simple and aligned, so you get the right people involved without unnecessary complexity.",
+      "You benefit from multiple expert teams, but the process remains streamlined. NexiFire manages coordination, so you experience a structured and aligned workflow rather than dealing with disconnected teams.",
   },
   {
     question: "What kind of businesses do you work with?",
     answer:
-      "We work with growing businesses, founders, and brands that need clear systems, strong execution, and scalable support.",
+      "Execution is carried out through our specialised brands, including dedicated teams for book writing, editing, proofreading, marketing and publishing, audiobook production, website development, and digital marketing.",
   },
   {
     question: "Can I choose specific services or brands?",
     answer:
-      "Yes. You can engage with a single specialized brand or combine services depending on your goals.",
+      "Yes. Depending on your needs, we can deploy one specialised brand or multiple brands as part of a complete growth system.",
   },
   {
     question: "How do you make sure quality across different brands?",
     answer:
-      "We maintain consistent strategy, standards, and oversight across the ecosystem so every deliverable stays aligned and high quality.",
+      "All brands operate under NexiFire’s strategic direction, systems, and standards. This ensures consistency, accountability, and alignment across every part of your project.",
   },
   {
     question: "What makes NexiFire’s approach more effective?",
     answer:
-      "Our structure allows depth, clarity, and execution. Instead of one general team doing everything, specialists focus on what they do best.",
+      "Our approach combines strategy, specialised execution, and continuous optimisation. Instead of isolated efforts, we build connected systems designed for long-term scalability and measurable results.",
   },
   {
     question: "How do I get started with NexiFire?",
     answer:
-      "Start with a consultation. We’ll understand your goals, identify the right path, and connect you with the right team or brand.",
+      "You can start by consulting with our team. We will assess your current position, identify growth opportunities, and recommend a structured approach using the right combination of our specialised brands.",
   },
 ];
 

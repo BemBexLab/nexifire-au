@@ -9,9 +9,9 @@ import GetInTouchSection from "@/components/GetInTouch";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Services: Specialized Growth Systems by NexiFire",
+  title: "Services: Specialised Growth Systems by NexiFire",
   description:
-    "NexiFire deploys specialized brands for brand strategy, digital marketing, content creation, and website systems built to scale your business.",
+    "NexiFire deploys specialised brands for brand strategy, digital marketing, content creation, and website systems built to scale your business.",
   pathname: "/services",
 });
 
@@ -21,7 +21,7 @@ const page = () => {
       <PageHero
         eyebrow="How NexiFire Works"
         title={`We Don’t Offer Services. We Deploy Specialized Systems for Growth.`}
-        description={`NexiFire connects strategy, execution, and specialized expertise through a network of focused brands, so every part of your business is built to scale.`}
+        description={`NexiFire connects strategy, execution, and specialised expertise through a network of focused brands, so every part of your business is built to scale.`}
       />
       <WhoWeAre
         heading={`The NexiFire Advantage: Built for Depth, Designed\nto Scale`}
@@ -33,9 +33,9 @@ const page = () => {
             className: "font-semibold",
           },
 
-          "Instead of offering isolated services, we operate as a structured ecosystem of specialized brands, each focused on mastering one specific area. This means every part of your business, from acquisition to content in terms of books, articles, or research to technology that includes website development, digital marketing, optimization, and various services, is handled by experts who do that one thing exceptionally well.",
+          "Instead of offering isolated services, we operate as a structured ecosystem of specialised brands, each focused on mastering one specific area. This means every part of your business, from acquisition to content in terms of books, articles, or research to technology that includes website development, digital marketing, optimisation, and various services, is handled by experts who do that one thing exceptionally well.",
 
-          "Our model combines deep specialization with seamless coordination. Each brand works within its domain, while NexiFire makes sure everything stays aligned under one clear strategy. The result is an integrated system that’s both focused and connected, designed not just to perform, but to scale.",
+          "Our model combines deep Specialisation with seamless coordination. Each brand works within its domain, while NexiFire makes sure everything stays aligned under one clear strategy. The result is an integrated system that’s both focused and connected, designed not just to perform, but to scale.",
 
           "Through this approach, we deliver complete growth functions, not scattered services. Whether it’s driving customer acquisition, building a strong brand presence, or developing reliable infrastructure, every piece works together as part of a larger system.",
 

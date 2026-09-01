@@ -19,10 +19,10 @@ const WhyYouBelongHere = () => {
           </h2>
 
           <p className="mt-3 max-w-[900px] break-words text-lg text-[#777777]">
-            Our organization provides more than employment opportunities because
+            Our organisation provides more than employment opportunities because
             we create an environment that supports individuals who want to
             develop their skills. People who want to take control of their work
-            and learn new things will find our organization to be their ideal
+            and learn new things will find our organisation to be their ideal
             place to work. At NexiFire, your work matters, your progress is
             noticed, and your potential is taken seriously.
           </p>

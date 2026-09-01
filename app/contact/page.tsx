@@ -16,7 +16,7 @@ const page = () => {
       <PageHero
         eyebrow="Contact Us"
         title={`Let’s Talk`}
-        description="Looking to start something new or increase the visibility of an existing one. We are here to guide you with the right strategy and the right system. Let’s understand your goals and create a clear path ahead, together."
+        description="Looking to start something new or increase the visibility of an existing business? We’re here to guide you with the right strategy and the right systems. Let’s understand your goals and create a clear path ahead, together."
       />
       <GetInTouchContact />
     </section>

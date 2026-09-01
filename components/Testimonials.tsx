@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 
 type Testimonial = {
   id: number;
@@ -15,42 +16,42 @@ const testimonials: Testimonial[] = [
     name: "Hannah Bertin",
     avatar: "/images/Ellipse 16.png",
     review:
-      "Nexifire has brought a level of structure I never realized I was missing. I am an author and worked with one of Nexifre's brands, Ink Founders. I must say they are very professional. Everything was aligned under one system. They helped me in editing, marketing, and publishing my book. I appreciated.",
+      "NexiFire brought a level of structure I never realised I was missing. I’m an author and worked with one of NexiFire’s brands, Ink Founders. I must say, they were very professional. Everything was aligned under one system, and they helped me with editing, marketing, and publishing my book. I really appreciated their support.",
   },
   {
     id: 2,
     name: "Benjamin Paul",
     avatar: "/images/Ellipse 16 (1).png",
     review:
-      "I was worried about my website development because I wanted it to be unique and responsive across all devices. It is not false that the Nexifire’s brand Web Founders helped me a lot in that. Web Founders keep everything connected from strategy to execution. It felt like a complete growth system.",
+      "I was concerned about my website development because I wanted it to be unique and responsive across all devices. NexiFire’s brand, Web Founders, helped me tremendously with that. They kept everything connected, from strategy through to execution. It felt like working with a complete growth system.",
   },
   {
     id: 3,
     name: "John Alex",
     avatar: "/images/Ellipse 16 (2).png",
     review:
-      "I was looking for the service creating my book website and book publishing, and the Nexifire brand, which is the Storyloom complete system I have worked with. No doubt they brought clarity and confidence. Everything is handled carefully, whether my author website or my book publishing on different platforms. Every step is well managed.",
+      "I was looking for support with creating my author website and publishing my book, and I worked with NexiFire’s brand, StoryLoom. There’s no doubt that their complete system gave me greater clarity and confidence. Everything was handled carefully, from my author website to publishing my book across different platforms. Every step was well managed.",
   },
   {
     id: 4,
-    name: "Sophie Lane",
+    name: "Olivia James",
     avatar: "https://i.pravatar.cc/100?img=4",
     review:
-      "Their process gave me confidence from day one. Every milestone was clearly planned, and the team made sure my project moved forward smoothly without confusion or delays.",
+      "Before NexiFire, I was trying to manage everything separately, but after working with them, we finally had a clear direction and a structured approach towards growth. They handled content creation for my website as well as the marketing for my book, and I was very satisfied with their work. I worked with Web Geeks Global and The Quill Book, and the biggest difference was how everything worked together. Each part of the process was handled by the right specialists, yet the entire experience felt connected and well managed.",
   },
   {
     id: 5,
-    name: "Marcus Lee",
+    name: "Alex Williams",
     avatar: "https://i.pravatar.cc/100?img=6",
     review:
-    "From branding to launch, everything felt organized and intentional. I appreciated how responsive the team was and how they connected every part of the work into one clear strategy.",
+      "My name is Alex, and I run an IT services company. I’ve worked with one of NexiFire’s brands, and I would describe their work as highly professional. They delivered everything on time, and I was very pleased with the content and illustrations they created for my website. I requested a few revisions as well, and each one was handled with great attention to detail. That level of care impressed me the most.",
   },
   {
     id: 6,
-    name: "Elena Cruz",
+    name: "Ernest Santillanes",
     avatar: "https://i.pravatar.cc/100?img=5",
     review:
-      "Working with them made the whole journey stress-free. They handled details carefully, communicated well, and delivered a polished result that felt aligned with my goals.",
+      "I’m using Ink Founders for my fiction book, and they have been incredible with the editing, formatting, and publishing process. They follow my instructions carefully for every chapter and make adjustments based on my feedback. I’m also very impressed with how they optimised my book for Amazon after publishing.",
   },
 ];
 
@@ -133,15 +134,23 @@ export default function TestimonialsSection() {
                   >
                     <Stars />
 
-                    <p className="text-base leading-[1.58] text-[#7a7a7a]">
-                      {item.review}
-                    </p>
+                    <div
+                      className="reviews-scroll h-[150px] overflow-y-scroll pr-2"
+                      aria-label={`${item.name} review`}
+                    >
+                      <p className="text-base leading-[1.58] text-[#7a7a7a]">
+                        {item.review}
+                      </p>
+                    </div>
 
                     <div className="mt-auto flex items-center gap-[12px] pt-[18px]">
-                      <img
+                      <Image
                         src={item.avatar}
                         alt={item.name}
+                        width={64}
+                        height={64}
                         className="h-[64px] w-[64px] rounded-full object-cover"
+                        sizes="64px"
                       />
                       <span className="text-[16px] font-medium text-[#4d4d4d]">
                         {item.name}
@@ -170,6 +179,17 @@ export default function TestimonialsSection() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .reviews-scroll {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+
+        .reviews-scroll::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </section>
   );
 }

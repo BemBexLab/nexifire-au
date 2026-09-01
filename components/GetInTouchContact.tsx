@@ -106,9 +106,7 @@ const GetInTouchContact = () => {
       <div className="mx-auto grid w-full max-w-[1139px] grid-cols-1 items-center justify-center gap-12 px-4 sm:px-6 md:px-8 lg:grid-cols-[470px_605px] lg:gap-16">
         <div className="mx-auto w-full max-w-[605px] pt-2 lg:mx-0 lg:max-w-none">
           <h2 className="bg-gradient-to-r from-[#282828] to-[#8C8C8C] bg-clip-text text-center font-jakarta text-3xl font-medium uppercase leading-tight text-transparent sm:text-4xl lg:text-left lg:text-5xl">
-            Get In Touch With
-            <br />
-            NexiFire
+            Get in Touch with <br />NexiFire
           </h2>
 
           <p className="mx-auto mt-2 max-w-[550px] text-center text-base font-normal leading-[1.45] text-[#777777] sm:text-lg lg:mx-0 lg:text-left lg:leading-[1.25]">
