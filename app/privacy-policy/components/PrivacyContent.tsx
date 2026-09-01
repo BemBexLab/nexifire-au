@@ -91,7 +91,7 @@ const PrivacyContent = () => {
             </h2>
             <div className="space-y-4 text-base leading-relaxed text-gray-500 sm:text-lg">
               <p>
-                The information we collect is used to respond to your inquiries,
+                The information we collect is used to respond to your enquiries,
                 improve our services, manage communication, process
                 applications, and enhance website functionality.
               </p>
@@ -138,7 +138,7 @@ const PrivacyContent = () => {
             </h2>
             <p className="text-base leading-relaxed text-gray-500 sm:text-lg">
               Our website may use cookies and similar technologies to improve
-              user experience, analyze traffic, and optimize website
+              user experience, analyze traffic, and optimise website
               performance.
             </p>
           </section>

@@ -14,7 +14,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata = createPageMetadata({
   title: "NexiFire: Growth Ecosystem for Brands That Scale",
   description:
-    "NexiFire is a growth ecosystem of specialized brands delivering strategy, marketing, content, and digital systems that help businesses scale.",
+    "NexiFire is a growth ecosystem of specialised brands delivering strategy, marketing, content, and digital systems that help businesses scale.",
   pathname: "/",
 });
 

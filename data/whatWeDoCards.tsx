@@ -85,7 +85,7 @@ export const whatWeDoCards: WhatWeDoCard[] = [
   {
     title: "Digital Marketing",
     description:
-      "We recognize your business with the right audience at the right time.",
+      "We connect your business with the right audience at the right time.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

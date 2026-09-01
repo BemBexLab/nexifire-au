@@ -149,7 +149,7 @@ export async function POST(request: Request) {
   }
 
   const fullPhone = [countryCode, phone].filter(Boolean).join(" ");
-  const subject = `New NexiFire inquiry from ${name}`;
+  const subject = `New NexiFire enquiry from ${name}`;
   const text = [
     "New NexiFire contact form submission",
     "",

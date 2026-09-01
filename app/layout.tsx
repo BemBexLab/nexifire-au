@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   title: "NexiFire: Create, Build, Grow",
   description:
-    "NexiFire is a global growth ecosystem connecting specialized expertise across publishing, technology, content, marketing, and digital strategy.",
+    "NexiFire is a global growth ecosystem connecting specialised expertise across publishing, technology, content, marketing, and digital strategy.",
 };
 
 export default function RootLayout({
