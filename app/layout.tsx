@@ -32,8 +32,11 @@ export const revalidate = false;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  alternates: {
+alternates: {
     canonical: "/",
+    languages: {
+      "en-AU": "/",
+    },
   },
   title: "NexiFire: Create, Build, Grow",
   description:
@@ -47,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-AU"
       suppressHydrationWarning
       className={`${mulish.variable} ${jakartaSans.variable} ${nunito.variable} h-full antialiased`}
     >
