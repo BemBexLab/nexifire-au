@@ -33,7 +33,7 @@ const brands: BrandItem[] = [
   {
     name: "Crux Publishing House",
     description:
-      "Crux Publishing House is where high-level ideas become professional manuscripts. We specialise in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
+      "Crux Publishing House is the website of a Sydney based self publishing company that helps authors turn rough ideas, half finished drafts, or complete manuscripts into professionally published books. The site presents a full service offering that covers ghostwriting, editing and proofreading, cover design, interior formatting, ISBN and barcode registration, audiobook production, marketing, and distribution to over 40 global platforms including Amazon. It stresses that authors keep full ownership of their work and earnings, that they get a single point of contact and a clear seven step process, and that support continues after launch. The tone is warm and encouraging, backed by author testimonials and a portfolio of memoirs, self help, fiction, and children’s books, with every page steering visitors toward requesting a free quote",
     url: "https://www.cruxpublishinghouse.com.au/",
     image: {
       src: "/icons/image1.avif",
