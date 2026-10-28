@@ -31,13 +31,13 @@ const LOGO_HEIGHT = 90;
 
 const brands: BrandItem[] = [
   {
-    name: "Ink Founders AU",
+    name: "Crux Publishing House",
     description:
-      "Ink Founders AU is where high-level ideas become professional manuscripts. We specialise in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
-    url: "https://www.inkfounders.com.au/",
+      "Crux Publishing House is where high-level ideas become professional manuscripts. We specialise in ghostwriting, developmental editing, industry-standard formatting, and cover design. All services under one roof that will convert the drafts into a polished book, ready for publishing on different major platforms and global distribution without the stress of managing vendors.",
+    url: "https://www.cruxpublishinghouse.com.au/",
     image: {
-      src: "/icons/inkfounder logo-19 1.png",
-      alt: "Inkfounders AU Logo",
+      src: "/icons/image1.avif",
+      alt: "Crux Publishing House Logo",
     },
   },
   {
